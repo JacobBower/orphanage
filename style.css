@@ -130,6 +130,7 @@ a.button-small {
 	width: 560px;
 	height: auto;
 	float: left;
+	padding-right: 20px;
 }
 #single-share li{
 	display: inline-block;
@@ -340,10 +341,9 @@ footer .button-small {
 	border: 1px solid black;
 }
 
-/* - - - - SINGLE-PAGE-WIDGET - - - - */
-#single-widget {
-	float: left;
-}
+/* - - - - SINGLE-PAGE - - - - - */
+
+
 
 /* - - - - FOOTER TABLET - - - - */
 .footer-wrapper {
