@@ -125,7 +125,6 @@ a.button-small {
 }
 
 /* - - - - SINGLE PAGE CONTENT - - - - */
-
 #single-content {
 	width: 560px;
 	height: auto;
@@ -157,6 +156,63 @@ a.button-small {
 	margin: 15px 20px 15px 0;
 }
 
+/* - - - - ABOUT PAGE CONTENT - - - - */
+#about-content {
+	width: 560px;
+	height: auto;
+	float: left;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+#about-mission {
+	padding-top:20px;
+	border-bottom:solid 1px;
+}
+#about-leadership {
+	padding-top:20px;
+	border-bottom:solid 1px;
+}
+#about-leadership-post {
+	padding-bottom:10px;
+}
+.placeholder {
+	width:120px;
+	height:120px;
+	background-color:#999;
+	float:left;
+	margin: 15px 20px 15px 0;
+	text-align:center;
+}
+.button {
+	display: inline-block;
+	text-align: center;
+	border:1px solid #CC9;
+	border-radius: 4px;
+	list-style-type: none;
+	padding: 3px;
+	width: 100px;
+	margin: 15px 10px 10px 0;
+	text-decoration: none;
+}
+#about-partners {
+	padding-top:20px;
+}
+#partners {
+	width:200px;
+	float:left;
+	padding-right:20px;
+}
+#partner-logo {
+	display: inline-block;
+	width:200px;
+	height:80px;
+	background-color:#999;
+	float:left;
+	margin: 15px 20px 15px 0;
+	text-align:justify;
+	line-height:80px;
+	text-align:center;
+}
 /* - - - - WIDGETS - - - - */
 #single-widget {
 	width: 300px;
@@ -175,7 +231,16 @@ a.button-small {
 	list-style-type:none;
 	 padding:5px; 
 }
-
+#about-widget {
+	width: 300px;
+	height: auto;
+	float: right;
+	padding-top:20px;
+}
+#about-widget li{
+	list-style-type:none;
+	 padding:5px; 
+}
 /* - - - - FOOTER - - - - */
 footer {
 	background: #E0E0E0;
