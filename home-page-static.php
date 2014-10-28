@@ -1,4 +1,10 @@
-<?php include "includes/header.php"; ?>
+<?php
+/*
+Template Name: Home
+*/
+
+get_header(); ?>
+
 
 <div class="content">
 
@@ -19,11 +25,11 @@
 				<aside class="current-projects">
 					<h2 class="section-headline">Current Projects</h2>
 						<div class="section-left">
-							<img src="img/placeholder-square.jpg" alt="" />
+							<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" />
 							<a href="#" class="button-small">Button</a>
 						</div>
 						<div class="section-right">
-							<img src="img/placeholder-square.jpg" alt="" />
+							<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" />
 							<a href="#" class="button-small">Button</a>
 						</div>
 
@@ -36,7 +42,7 @@
 				<div class="blog-section">
 					<h2 class="section-headline">Blog</h2>
 					<section class="blog-post">
-						<img src="img/placeholder-square.jpg" alt="" />
+						<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" />
 							<div class="blog-description">
 								<h4 class="blog-post-title">Title</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -45,7 +51,7 @@
 			</section>
 				<div class="clearfix"></div>
 					<section class="blog-post">
-						<img src="img/placeholder-square.jpg" alt="" />
+						<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" />
 							<div class="blog-description">
 								<h4 class="blog-post-title">Title</h4>
 								<p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -65,4 +71,5 @@
 
 </div> <!-- CONTENT -->
 
-<?php include "includes/footer.php"; ?>
+<?php 
+get_footer(); ?>
