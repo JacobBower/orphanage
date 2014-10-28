@@ -213,11 +213,23 @@ a.button-small {
 	line-height:80px;
 	text-align:center;
 }
+#gallery-content {
+	width: 560px;
+	height: auto;
+	float: left;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+#gallery {
+	padding-top:20px;
+}
 /* - - - - WIDGETS - - - - */
 #single-widget {
 	width: 300px;
 	height: auto;
 	float: right;
+	padding-top:30px;
 }
 .widget-category {
 	height: 50px;
@@ -235,7 +247,13 @@ a.button-small {
 	width: 300px;
 	height: auto;
 	float: right;
-	padding-top:20px;
+	padding-top:30px;
+}
+#gallery-widget {
+	width: 300px;
+	height: auto;
+	float: right;
+	padding-top:30px;
 }
 #about-widget li{
 	list-style-type:none;
