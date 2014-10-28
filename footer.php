@@ -4,10 +4,10 @@
 		<div class="footer-wrapper">
 			<div class="footer-left">
 				<ul class="social-icons">
-					<li class="margin-right"><a href="#"><img src="img/linkedin-128.png" alt="linkedin icon" /></a></li>
-					<li class="margin-right"><a href="#"><img src="img/pinterest-128.png" alt="pinterest icon" /></a></li>
-					<li class="margin-right"><a href="#"><img src="img/facebook-128.png" alt="facebook icon" /></a></li>
-					<li><a href="#"><img src="img/twitter-128.png" alt="twitter icon" /></a></li>
+					<li class="margin-right"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin-128.png" alt="linkedin icon" /></a></li>
+					<li class="margin-right"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/pinterest-128.png" alt="pinterest icon" /></a></li>
+					<li class="margin-right"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/facebook-128.png" alt="facebook icon" /></a></li>
+					<li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/twitter-128.png" alt="twitter icon" /></a></li>
 				</ul>
 
 				<ul class="share-button-list">
@@ -33,5 +33,6 @@
 		</div>
 		<div class="clearfix"></div>
 	</footer>
+wp_footer();
 </body>
 </html>

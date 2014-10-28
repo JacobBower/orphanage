@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>200 Orphanages Worldwide</title>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
 
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+<?php wp_head(); ?>
 </head>
-<body>
-
-	
-
+<body <?php body_class(); ?>>
 		<header>
 			<div class="header-wrapper">
 				<div class="header-left">
@@ -16,7 +15,7 @@
 				</div>
 				<div class="header-right">
 					<div class="responsive-menu-wrapper">
-						<a href="#" class="responsive-menu"><img src="img/menu-img.png" alt="responsive menu image" class="responsive-menu-img"/></a>
+						<a href="#" class="responsive-menu"><img src="<?php bloginfo('template_directory'); ?>/img/menu-img.png" alt="responsive menu image" class="responsive-menu-img"/></a>
 					</div>
 					<div class="share-buttons">
 						<ul class="share-button-list">
