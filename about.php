@@ -1,7 +1,9 @@
-<?php include "includes/header.php"; ?>
+<?php 
+/*
+Template Name: About
+*/
+get_header(); ?>
 	
-    
-    
 	<div id="about-content">
     
  	   <h2>200 Orphanages Worldwide</h2>
@@ -26,7 +28,7 @@
                         trofie campanelle gnocchi vermicelli capunti orzo.<br />
                         <a href="" class="button">Button</a>
                         </p>
-                </section><!-----ABOUT-LEADERSHIP-POST----->
+                </section><!--ABOUT-LEADERSHIP-POST-->
                 <section id="about-leadership-post">
             		<div class="placeholder"><a href="#"></a></div>
                 		<br />
@@ -37,9 +39,9 @@
                         <br />
                         <a href="" class="button">More</a>
                         </p>
-                </section><!-----ABOUT-LEADERSHIP-POST----->
+                </section><!--ABOUT-LEADERSHIP-POST-->
                 	
-    	</section><!-----ABOUT-LEADERSHIP----->
+    	</section><!--ABOUT-LEADERSHIP-->
 		
         <section id="about-partners">
         	<h3>Our Partners</h3>
@@ -52,7 +54,7 @@
                         <a href="" class="button">Button</a>
                         </p>
                     </p>
-                </div><!-----PARTNERS----->
+                </div><!--PARTNERS-->
                 <br />
             	<div id="partners">
                 	<h4>Title</h4>
@@ -61,11 +63,11 @@
                         vermicelli capunti orzo lagane.<br />
                         <a href="" class="button">Button</a>
                         </p>
-                </div><!-----PARTNERS----->
+                </div><!--PARTNERS-->
         
-        </section><!-----ABOUT-PARTNERS----->
+        </section><!--ABOUT-PARTNERS-->
 
-     </div><!-------ABOUT-CONTENT------  -->
+     </div><!-- ABOUT-CONTENT -->
     
     <div id="about-widget">
         <div class="widget-category"><h2>Category</h2></div>
@@ -89,9 +91,9 @@
 				<li><a href="#">Link</a></li>
 				<li><a href="#">Link</a></li>
 			</ul>
-    </div><!-----ABOUT-WIDGET----->
+    </div><!--ABOUT-WIDGET-->
 
 
     
 
-<?php include "includes/footer.php"; ?>
+<?php get_footer(); ?>
