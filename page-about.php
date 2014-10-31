@@ -6,7 +6,7 @@ get_header(); ?>
 	
 	<div id="about-content">
     
- 	   <h2>200 Orphanages Worldwide</h2>
+ 	   <h2><?php the_title(); ?></h2>
        
        <section id="about-mission">
             <h3>Our Mission Statement</h3>
@@ -92,8 +92,5 @@ get_header(); ?>
 				<li><a href="#">Link</a></li>
 			</ul>
     </div><!--ABOUT-WIDGET-->
-
-
-    
 
 <?php get_footer(); ?>

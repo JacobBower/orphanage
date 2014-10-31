@@ -18,15 +18,11 @@
 			</div>
 			<aside class="footer-right">
 				<nav class="footer-nav">
-					<ul>
-						<li><a href="#" >Projects</a></li>
-						<li><a href="#" >Volunteer</a></li>
-						<li><a href="#" >Events</a></li>
-						<li><a href="#" >About</a></li>
-						<li><a href="#" >Gallery</a></li>
-						<li><a href="#" >Blog</a></li>
-						<li><a href="#" >Contact</a></li>
-					</ul>
+					<?php wp_nav_menu( array( 
+						'theme_location' => 'footer-menu' ,
+						'menu' => 'Footer Menu' ,
+						'container'  => 'ul', 
+					) ); ?>
 				</nav>
 				<p class="copy">All content &copy; 2014 200 Orphanages Worldwide</p>
 			</aside>
