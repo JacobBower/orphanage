@@ -11,7 +11,7 @@
 		<header>
 			<div class="header-wrapper">
 				<div class="header-left">
-					<a href="#" ><img src="" alt="200 Orphanages Worldwide logo" class="logo" /></a>
+					<a href="<?php bloginfo('url'); ?>" ><img src="" alt="200 Orphanages Worldwide logo" class="logo" /></a>
 				</div>
 				<div class="header-right">
 					<div class="responsive-menu-wrapper">
