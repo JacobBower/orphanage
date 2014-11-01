@@ -130,7 +130,7 @@ a.button-small {
 
 /* - - - - SINGLE PAGE CONTENT - - - - */
 #single-content {
-	width: 560px;
+	width: 100%;
 	height: auto;
 	float: left;
 	padding-right: 20px;
@@ -146,7 +146,7 @@ a.button-small {
 	text-decoration: none;
 }
 #single-post-comment {
-	width: 560px;
+	width: 100%;
 	height: auto;
 	float: left;
 }
@@ -230,10 +230,7 @@ a.button-small {
 }
 /* - - - - WIDGETS - - - - */
 #single-widget {
-	width: 300px;
-	height: auto;
-	float: right;
-	padding-top:30px;
+	display:none;
 }
 .widget-category {
 	height: 50px;
@@ -427,10 +424,32 @@ footer .button-small {
 	float: right;
 	border: 1px solid black;
 }
-
-/* - - - - SINGLE-PAGE - - - - - */
-
-
+/*  SINGLE PAGE CONTENT  */
+#single-content {
+	width: 57.142857%;
+}
+#single-share li{
+	display: inline-block;
+	text-align: center;
+	border:1px solid #CC9;
+	border-radius: 2px;
+	list-style-type: none;
+	padding: 3px 10px;
+	margin: 15px 10px 10px 0;
+	text-decoration: none;
+}
+#single-post-comment {
+ 	width: 57.142857%
+}
+	
+/* - - - - WIDGETS - - - - */
+#single-widget {
+	width: 30.6122%;
+	display:inherit;
+	height: auto;
+	float: right;
+	padding-top:30px;
+}
 
 /* - - - - FOOTER TABLET - - - - */
 .footer-wrapper {
