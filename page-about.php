@@ -4,11 +4,11 @@ Template Name: About
 */
 get_header(); ?>
 	
-	<div id="about-content">
+	<div class="page-content">
     
  	   <h2><?php the_title(); ?></h2>
        
-       <section id="about-mission">
+       <section class="page-content-bottom-border">
             <h3>Our Mission Statement</h3>
                 	<p>
                     	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
@@ -18,9 +18,9 @@ get_header(); ?>
                         vermicelli capunti orzo lagane gomito sacchettoni torchio. Quadrefiore frak chifferi linguettine lumaconi.
                     </p>
         </section>
-		<section id="about-leadership">
+		<section class="page-content-bottom-border">
       		<h3>Our Leadership</h3>
-            	<section id="about-leadership-post">
+            	<section class="leadership-post">
             		<div class="placeholder"><a href="#"></a></div>
                 		<br />
                         <h4>Title</h4>
@@ -43,12 +43,12 @@ get_header(); ?>
                 	
     	</section><!--ABOUT-LEADERSHIP-->
 		
-        <section id="about-partners">
+        <section class="page-content-top-padding">
         	<h3>Our Partners</h3>
-            	<div id="partners">
+            	<div class="partners">
                 	<p>
                     <h4>Title</h4>
-                    	<div id="partner-logo">Logo</div>
+                    	<div class="partner-logo">Logo</div>
                         <p>Gnocchi trofie campanelle gnocchi 
                         vermicelli capunti orzo lagane.<br />
                         <a href="" class="button">Button</a>
@@ -56,9 +56,9 @@ get_header(); ?>
                     </p>
                 </div><!--PARTNERS-->
                 <br />
-            	<div id="partners">
+            	<div class="partners">
                 	<h4>Title</h4>
-                    	<div id="partner-logo">Logo</div>
+                    	<div class="partner-logo">Logo</div>
                         <p>Gnocchi trofie campanelle gnocchi 
                         vermicelli capunti orzo lagane.<br />
                         <a href="" class="button">Button</a>
@@ -69,7 +69,7 @@ get_header(); ?>
 
      </div><!-- ABOUT-CONTENT -->
     
-    <div id="about-widget">
+    <div class="widget">
         <div class="widget-category"><h2>Category</h2></div>
         	<br />
         	<ul>

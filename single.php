@@ -1,9 +1,12 @@
-<?php include "includes/header.php"; ?>
-
-	<div class="single-content">
+<?php 
+/*
+Template Name: Single
+*/
+get_header(); ?>
+	
+	<div class="page-content">
     
-		<section id="single-post">
-        	<h2>This is the Tile</h2>
+ 	   <h2><?php the_title(); ?></h2>
             <h5><em>Posted October 23, 2014 by Weird Al under <a href="#">Tag</a> <a href="#">Tag</a> <a href="#">Tag</a>
             </em></h5>
             	<div  class="single-share">
@@ -30,8 +33,6 @@
                     <br />
                     <hr />
                     <br />
-		</section>
-        
      </div>   
     
     <div class="widget">

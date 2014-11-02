@@ -124,12 +124,13 @@ a.button-small {
 	border: 1px solid black;
 }
 
-/* - - - - SINGLE PAGE CONTENT - - - - */
-.single-content {
+/* - - -  PAGE CONTENT - - - - */
+.page-content {
 	width: 100%;
 	height: auto;
 	float: left;
 	padding-right: 20px;
+	padding-top: 20px;
 }
 .single-share li{
 	display: inline-block;
@@ -155,24 +156,11 @@ a.button-small {
 	height:120px;
 	margin: 15px 20px 15px 0;
 }
-
-/* - - - - ABOUT PAGE CONTENT - - - - */
-#about-content {
-	width: 58.33%;
-	height: auto;
-	float: left;
-	padding-right: 20px;
-	padding-top: 20px;
-}
-#about-mission {
+.page-content-bottom-border {
 	padding-top:20px;
 	border-bottom:solid 1px;
 }
-#about-leadership {
-	padding-top:20px;
-	border-bottom:solid 1px;
-}
-#about-leadership-post {
+.leadership-post {
 	padding-bottom:10px;
 }
 .placeholder {
@@ -194,15 +182,15 @@ a.button-small {
 	margin: 15px 10px 10px 0;
 	text-decoration: none;
 }
-#about-partners {
+.page-content-top-padding {
 	padding-top:20px;
 }
-#partners {
+.partners {
 	width:200px;
 	float:left;
 	padding-right:20px;
 }
-#partner-logo {
+.partner-logo {
 	display: inline-block;
 	width:200px;
 	height:80px;
@@ -239,16 +227,7 @@ a.button-small {
 	list-style-type:none;
 	 padding:5px; 
 }
-#about-widget {
-	width: 300px;
-	height: auto;
-	float: right;
-	padding-top:30px;
-}
-#about-widget li{
-	list-style-type:none;
-	 padding:5px; 
-}
+
 /* - - - - FOOTER - - - - */
 footer {
 	background: #E0E0E0;
@@ -414,8 +393,8 @@ footer .button-small {
 	border: 1px solid black;
 }
 
-/* - - - - SINGLE PAGE CONTENT - - - - */
-.single-content {
+/* - - - - PAGE CONTENT - - - - */
+.page-content {
 	width: 57.142857%;
 }
 .single-share li{
@@ -492,9 +471,5 @@ footer .share-button-list li {
 }
 
 @media screen and (min-width: 1056px) {
-	<!-- ABOUT PAGE -->
-#about-content {
-	width: 58.33%;
-}
-
+	
 }
