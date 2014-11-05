@@ -8,7 +8,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-		<header>
+		<header class="header">
 			<div class="header-wrapper">
 				<div class="header-left">
 					<a href="<?php bloginfo('url'); ?>" ><img src="" alt="200 Orphanages Worldwide logo" class="logo" /></a>

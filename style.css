@@ -386,11 +386,10 @@ footer .button-small {
 .blog-post .button-small {
 	float: left;
 }
-.widget-area {
+aside#primary,
+aside#secondary {
 	width: 27%;
-	height: 300px;
 	float: right;
-	border: 1px solid black;
 }
 
 /* - - - - PAGE CONTENT - - - - */
@@ -412,11 +411,8 @@ footer .button-small {
 	
 /* - - - - WIDGETS - - - - */
 .widget {
-	width: 30.6122%;
-	display:inherit;
-	height: auto;
-	float: right;
-	padding-top:30px;
+	display: block;
+	padding-top: 30px;
 }
 
 /* - - - - FOOTER TABLET - - - - */

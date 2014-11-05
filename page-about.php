@@ -69,28 +69,6 @@ get_header(); ?>
 
      </div><!-- ABOUT-CONTENT -->
     
-    <div class="widget">
-        <div class="widget-category"><h2>Category</h2></div>
-        	<br />
-        	<ul>
-				<li><a href="#">Category</a></li>
-				<li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-			</ul>
-            <br />
-        <div class="widget-category"><h2>Links</h2></div>
-        	<br />
-        	<ul>
-				<li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-			</ul>
-    </div><!--ABOUT-WIDGET-->
+    <?php get_sidebar('secondary'); ?>
 
 <?php get_footer(); ?>

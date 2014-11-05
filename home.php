@@ -5,7 +5,6 @@ Template Name: Home
 
 get_header(); ?>
 
-
 <div class="content">
 
 			<section class="content-section">
@@ -61,11 +60,7 @@ get_header(); ?>
 					<a href="#" class="button-large">More</a>
 				</div> <!-- BLOG SECTION -->
                 
-				<div>
-				<div class="widget-area">
-					<p>Widget Area</p>
-				</div>
-
+				<?php get_sidebar('primary'); ?>
 
 			</section>
 
