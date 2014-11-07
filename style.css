@@ -164,11 +164,10 @@ a.button-small {
 	padding-bottom:10px;
 }
 .placeholder {
-	width:120px;
-	height:120px;
-	background-color:#999;
+	width: 40%;
+	height: 40%;
 	float:left;
-	margin: 15px 20px 15px 0;
+	padding:10px 20px 10px 0px;
 	text-align:center;
 }
 .button {
@@ -201,16 +200,7 @@ a.button-small {
 	line-height:80px;
 	text-align:center;
 }
-#gallery-content {
-	width: 560px;
-	height: auto;
-	float: left;
-	padding-right: 20px;
-	padding-top: 20px;
-}
-#gallery {
-	padding-top:20px;
-}
+
 /* - - - - WIDGETS - - - - */
 .widget {
 	display:none;
@@ -413,6 +403,12 @@ aside#secondary {
 .widget {
 	display: block;
 	padding-top: 30px;
+}
+.placeholder {
+	width: 19.642857%;
+	height: 19.642857%;
+	padding: 0px;
+	margin: 15px 20px 15px 0;
 }
 
 /* - - - - FOOTER TABLET - - - - */
