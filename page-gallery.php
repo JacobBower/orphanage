@@ -8,41 +8,44 @@ get_header(); ?>
     
  	   <h2><?php the_title(); ?></h2>
        
-       <section id="gallery">
+       <section>
             <h3>Content Title</h3>
                 	<p>
                     	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
                         paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
                     </p>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-       </section><!--GALLERY-->
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    
+       </section>
+       <div class="clearfix"></div>
+       <!-----GALLERY----->
        
-       <section id="gallery">
-            <h3>Content Title</h3>
+       <section class="page-content-top-padding">
+            <h3>Content Title 2</h3>
                 	<p>
                     	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
                         paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
                     </p>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-                    <div class="placeholder"><a href="#"></a></div>
-       </section><!--GALLERY-->
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
+       </section><!-----GALLERY----->
        
-    </div><!--GALLERY-CONTENT-->
+    </div><!-----GALLERY-CONTENT----->
     
-    <div id="gallery-widget">
+    <div class="widget">
         <div class="widget-category"><h2>Category</h2></div>
         	<br />
         	<ul>
@@ -64,6 +67,7 @@ get_header(); ?>
 				<li><a href="#">Link</a></li>
 				<li><a href="#">Link</a></li>
 			</ul>
-    </div><!--ABOUT-WIDGET-->
+    </div><!-----WIDGET----->
+
 
 <?php get_footer(); ?>
