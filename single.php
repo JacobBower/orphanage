@@ -2,12 +2,16 @@
 	
 	<div class="page-content row">
     
- 	    <h2><?php the_title(); ?></h2>
+ 	    <h1><?php the_title(); ?></h1>
+
+        <div class="sidebar column-4 no-pad-right">
+            <?php get_sidebar('secondary'); ?>
+        </div>
 
         <!-- START CONTENT -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <div class="post-wrapper column-8">
+        <div class="post-wrapper column-8 no-pad-left">
         <p class="postmetadata">
             <span class="date">Posted on <?php the_time('F jS, Y') ?></span> in 
             <span class="cat"><?php the_category(', ') ?></span>
@@ -55,9 +59,6 @@
                     <br />
                     <br />
                     <br /> -->
-        </div>
-        <div class="sidebar column-4 no-pad-right">
-            <?php get_sidebar('secondary'); ?>
         </div>
     </div>   
       

@@ -6,7 +6,11 @@ get_header(); ?>
 	
 	<div class="page-content row">
     
- 	   <h2><?php the_title(); ?></h2>
+ 	   <h1><?php the_title(); ?></h1>
+
+       <div class="sidebar column-4 no-pad-right">
+            <?php get_sidebar('secondary'); ?>
+        </div>
        
         <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
             <h3>Content Title</h3>
@@ -35,10 +39,6 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-
-        <div class="sidebar column-4 no-pad-right">
-            <?php get_sidebar('secondary'); ?>
-        </div>
 
         <div class="clearfix"></div>
         <!--GALLERY-->

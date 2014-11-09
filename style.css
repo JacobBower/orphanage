@@ -65,7 +65,7 @@ header {
 	width: 100%;
 	margin: 0 auto;
 }
-h2 {
+h1 {
 	font-size: 2em;
 	padding-top: 1em;
 }
@@ -368,7 +368,10 @@ footer {
 	padding-right: 2em;
 }
 /* - - - - CONTENT TABLET - - - - */
-.mission-statement {
+/*.mission-statement {
+	padding-right: 1em;
+}*/
+.content-section {
 	padding-right: 1em;
 }
 .current-projects {
@@ -453,6 +456,7 @@ footer {
 /* - - - - WIDGETS - - - - */
 .sidebar {
 	display: block;
+	float: right;
 }
 /* - - - - FOOTER TABLET - - - - */
 .footer-wrapper {
@@ -462,6 +466,7 @@ footer {
 }
 .footer-right {
 	display: block;
+	padding: 0 1em;
 }
 .footer-nav {
 	padding-top: .5em;
