@@ -9,19 +9,19 @@
 </head>
 <body <?php body_class(); ?>>
 		<header class="header">
-			<div class="header-wrapper">
-				<div class="header-left">
+			<div class="header-wrapper row">
+				<div class="header-left column-3 no-pad-left">
 					<a href="<?php bloginfo('url'); ?>" ><img src="" alt="200 Orphanages Worldwide logo" class="logo" /></a>
 				</div>
-				<div class="header-right">
+				<div class="header-right column-9 no-pad-right">
 					<div class="responsive-menu-wrapper">
 						<a href="#" class="responsive-menu"><img src="<?php bloginfo('template_directory'); ?>/img/menu-img.png" alt="responsive menu image" class="responsive-menu-img"/></a>
 					</div>
-					<div class="share-buttons">
+					<div class="share-buttons column-12">
 						<ul class="share-button-list">
-							<li><a href="#" >Donate</a></li>
-							<li><a href="#" >Volunteer</a></li>
-							<li><a href="#" >Share</a></li>
+							<li class="column-3"><a href="#" >Donate</a></li>
+							<li class="column-3"><a href="#" >Volunteer</a></li>
+							<li class="column-3"><a href="#" >Share</a></li>
 						</ul>
 					</div>
 					<div class="header-nav-wrapper">
@@ -39,4 +39,4 @@
 		</header>
 		
 	
-	<div id="wrapper">
+	<div class="wrapper">
