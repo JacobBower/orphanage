@@ -25,7 +25,7 @@ get_header(); ?>
                     
        </section>
        <div class="clearfix"></div>
-       <!-----GALLERY----->
+       <!--GALLERY-->
        
        <section class="page-content-top-padding">
             <h3>Content Title 2</h3>
@@ -41,9 +41,9 @@ get_header(); ?>
                     <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
                     <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
                     <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-       </section><!-----GALLERY----->
+       </section><!--GALLERY-->
        
-    </div><!-----GALLERY-CONTENT----->
+    </div><!--GALLERY-CONTENT-->
     
     <div class="widget">
         <div class="widget-category"><h2>Category</h2></div>
@@ -67,7 +67,7 @@ get_header(); ?>
 				<li><a href="#">Link</a></li>
 				<li><a href="#">Link</a></li>
 			</ul>
-    </div><!-----WIDGET----->
+    </div><!--WIDGET-->
 
 
 <?php get_footer(); ?>
