@@ -62,8 +62,8 @@ get_header(); ?>
 						</section>
 						<a href="#" class="button-large">More</a>
 					</div> <!-- BLOG SECTION -->
-					<div class="column-4 no-pad-right">
-					<?php get_sidebar('primary'); ?>
+					<div class=" sidebar column-4 no-pad-right">
+						<?php get_sidebar('primary'); ?>
 					</div>
 				</div><!--row-->
 

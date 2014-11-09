@@ -4,70 +4,72 @@ Template Name: Gallery
 */
 get_header(); ?>
 	
-	<div class="page-content">
+	<div class="page-content row">
     
  	   <h2><?php the_title(); ?></h2>
        
-       <section>
+        <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
             <h3>Content Title</h3>
-                	<p>
-                    	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
-                        paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
-                    </p>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    
-       </section>
-       <div class="clearfix"></div>
-       <!-----GALLERY----->
-       
-       <section class="page-content-top-padding">
-            <h3>Content Title 2</h3>
-                	<p>
-                    	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
-                        paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
-                    </p>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-       </section><!-----GALLERY----->
-       
-    </div><!-----GALLERY-CONTENT----->
-    
-    <div class="widget">
-        <div class="widget-category"><h2>Category</h2></div>
-        	<br />
-        	<ul>
-				<li><a href="#">Category</a></li>
-				<li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-			</ul>
-            <br />
-        <div class="widget-category"><h2>Links</h2></div>
-        	<br />
-        	<ul>
-				<li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-			</ul>
-    </div><!-----WIDGET----->
+        	<p>
+            	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
+                paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
+            </p>
+            <div class="row">
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sidebar column-4 no-pad-right">
+            <?php get_sidebar('secondary'); ?>
+        </div>
+
+        <div class="clearfix"></div>
+        <!--GALLERY-->
+        <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
+            <h3>Content Title</h3>
+            <p>
+                Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
+                paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
+            </p>
+            <div class="row">
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+            </div>
+        </section>
+    </div><!--GALLERY-CONTENT-->
 
 
 <?php get_footer(); ?>
