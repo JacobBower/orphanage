@@ -1,22 +1,44 @@
-<?php 
-/*
-Template Name: Single
-*/
-get_header(); ?>
+<?php get_header(); ?>
 	
-	<div class="page-content">
+	<div class="page-content row">
     
- 	   <h2><?php the_title(); ?></h2>
-            <h5><em>Posted October 23, 2014 by Weird Al under <a href="#">Tag</a> <a href="#">Tag</a> <a href="#">Tag</a>
-            </em></h5>
-            	<div  class="single-share">
+ 	    <h2><?php the_title(); ?></h2>
+
+        <!-- START CONTENT -->
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+        <div class="post-wrapper column-8">
+        <p class="postmetadata">
+            <span class="date">Posted on <?php the_time('F jS, Y') ?></span> in 
+            <span class="cat"><?php the_category(', ') ?></span>
+            <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
+        </p>
+            <!-- <h5><em>Posted October 23, 2014 by Weird Al under <a href="#">Tag</a> <a href="#">Tag</a> <a href="#">Tag</a>
+            </em></h5> -->
+            	<div class="single-share">
 					<ul>
 						<li><a href="#">Share</a></li>
 						<li><a href="#0.1_">Share</a></li>
 						<li><a href="#0.1_">Share</a></li>
 					</ul>
 				</div>
-                	<p>
+                <?php the_content('More &raquo;'); ?>
+                <nav class="post-nav">
+                    <div class="alignleft">
+                        <?php previous_post_link(); ?>
+                    </div> 
+                    <div class="alignright">
+                        <?php next_post_link(); ?>
+                    </div>
+                </nav>
+    
+                <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
+                <?php comments_template(); ?>
+                <?php endwhile; else: ?>
+                <p>Sorry, no posts matched your criteria.</p>
+                <?php endif; ?>
+            <!-- END CONTENT -->
+                	<!-- <p>
                     	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
                         paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne 'ncannulate fucker trenette campanelle. 
                         Dick frak scialatelli cellentani lanterne. Lasagnotte mezzani pasta pasta al ceppo cavatappi fagioloni rat fart. 
@@ -31,37 +53,15 @@ get_header(); ?>
                         vermicelli capunti orzo lagane gomito sacchettoni torchio. Quadrefiore frak chifferi linguettine lumaconi.
                     </p>
                     <br />
-                    <hr />
                     <br />
-     </div>   
-    
-    <div class="widget">
-        <div class="widget-category"><h2>Category</h2></div>
-        	<br />
-        	<ul>
-				<li><a href="#">Category</a></li>
-				<li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-			</ul>
-            <br />
-        <div class="widget-category"><h2>Links</h2></div>
-        	<br />
-        	<ul>
-				<li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-			</ul>
-    </div>
-  
-  <div class="clearfix"></div>
-    
-    <div class="post-comment">
+                    <br /> -->
+        </div>
+        <div class="sidebar column-4 no-pad-right">
+            <?php get_sidebar('secondary'); ?>
+        </div>
+    </div>   
+      
+    <div class="post-comment column-8">
         	<br />
       		<h3>Comments</h3>
             	<div class="comment-image"><br /><br /><br /><a href="#">IMG</a></div>
@@ -73,4 +73,4 @@ get_header(); ?>
                         trofie campanelle gnocchi vermicelli capunti orzo lagane gomito sacchettoni.</p>	
     </div>
 
-<?php include "includes/footer.php"; ?>
+<?php get_footer(); ?>
