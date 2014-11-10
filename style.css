@@ -92,7 +92,6 @@ img.logo {
 	padding: 0 1em 0 0;
 }
 .header-right {
-	width: 30%;
 	float: right;
 }
 .header-menu {
@@ -102,7 +101,20 @@ img.logo {
 	display: none;
 }
 .header-nav {
-	display: none;
+	display: block;
+	clear:both;
+}
+.header-nav ul li {
+	float: none;
+	padding: 10px;
+	border-top: 1px solid #999;
+	margin: 0;
+}
+.header-nav li:last-child {
+	border-bottom: 1px solid #999;
+}
+.header-nav ul li a {
+	display: block; 
 }
 .responsive-menu-wrapper {
 	width: 60px;
@@ -115,6 +127,7 @@ img.logo {
 .responsive-menu-img {
 	width: 60px;
 	margin-top: 5px;
+	margin-bottom:20px;
 }
 
 /* - - - - CONTENT - - - -  */
@@ -359,6 +372,7 @@ footer {
 }
 .header-nav ul li {
 	display: table-cell;
+	border-top: none;
 }
 .header-nav ul li a {
 	text-align: center;
@@ -367,6 +381,10 @@ footer {
 .header-left {
 	padding-right: 2em;
 }
+.header-nav li:last-child {
+border-bottom: none;
+}
+
 /* - - - - CONTENT TABLET - - - - */
 /*.mission-statement {
 	padding-right: 1em;

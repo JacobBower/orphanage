@@ -4,6 +4,16 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+$(window).load(function() { // enable function upon window load
+$(".responsive-menu").click(function() { // when toggle is clicked...
+$(".header-nav").toggle(); // ... open or close the navigation
+});
+});
+</script>
+
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 <?php wp_head(); ?>
 </head>
