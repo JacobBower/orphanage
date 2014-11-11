@@ -1,73 +1,55 @@
 <?php 
 /*
-Template Name: Gallery
+Template Name: Projects
 */
 get_header(); ?>
 	
-	<div id="gallery-content">
+	<div class="page-content row">
     
- 	   <h2><?php the_title(); ?></h2>
+ 	   <h1><?php the_title(); ?></h1>
        
-       <section>
-            <h3>Content Title</h3>
-                	<p>
-                    	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
-                        paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
-                    </p>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    
+       <div class="sidebar column-4 no-pad-right">
+            <?php get_sidebar('secondary'); ?>
+        </div>
+       
+       <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
+            <h3 class="content-headline">Current Projects</h3>
+               
+				<div class="main-content-slider column-12">
+						<img src="" alt="content-slider" />
+				</div>
+			
        </section>
        <div class="clearfix"></div>
        <!--GALLERY-->
        
-       <section class="page-content-top-padding">
-            <h3>Content Title 2</h3>
-                	<p>
-                    	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
-                        paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
-                    </p>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-                    <div><a href="#"><img class="placeholder" src="img/placeholder-square-small.png" alt="" /></a></div>
-       </section><!--GALLERY-->
+       <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
+            <h3 class="content-headline">Past Projects</h3>
+               				
+					<div class="main-content-slider column-12">
+						<img src="" alt="content-slider" />
+					</div>
+       </section>
+       <div class="clearfix"></div>
+       
+       <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
+       <h2>Partners</h2>
+       <div class="row">
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+                <div class="image-row-container">
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                    <div class="column-3 image-container"><a href="#"><img class="placeholder" src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" /></a></div>
+                </div>
+            </div>
+       
+       </section>
        
     </div><!--GALLERY-CONTENT-->
     
-    <div class="widget">
-        <div class="widget-category"><h2>Category</h2></div>
-        	<br />
-        	<ul>
-				<li><a href="#">Category</a></li>
-				<li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Category</a></li>
-			</ul>
-            <br />
-        <div class="widget-category"><h2>Links</h2></div>
-        	<br />
-        	<ul>
-				<li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-			</ul>
-    </div><!--WIDGET-->
+
 
 
 <?php get_footer(); ?>
