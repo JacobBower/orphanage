@@ -4,6 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
 
+<<<<<<< Updated upstream
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
 <script type="text/javascript" charset="utf-8">
@@ -14,7 +15,15 @@ $(".header-nav").toggle(); // ... open or close the navigation
 });
 </script>
 
+=======
+<?php $host = $_SERVER['SERVER_NAME']; if ($host == 'localhost') : ?>
+>>>>>>> Stashed changes
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+<?php else: ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="all" />
+<?php endif; ?>
+
+<script src="less.js" type="text/javascript"></script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

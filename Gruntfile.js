@@ -2,34 +2,39 @@ module.exports = function(grunt) {
   //load our plugins that were installed via NPM
   grunt.loadNpmTasks("grunt-contrib-less");
   grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-spritesmith');
+  // grunt.loadNpmTasks('grunt-spritesmith');
 
   //Set Options
   grunt.initConfig({
     less: {
       dev: {
-        //compile from style.less to style.compile.css
-        src: "src/style.less",
-        dest: "dist/style.compile.css"
-      }
-    },
-    cssmin: {
-
-      dist: {
+        // developer tasks
         files: {
-          //minifi to style.css
-          'dist/style.css': ['dist/style.compile.css']
+          // compile from style.less to style.css
+          "style.css": "style.less"
+        },
+        options: {
+          cleancss: false
+        }
+      },
+      dist: {
+        // distribution tasks
+        files: {
+          // compile from style.less to style.min.css
+          "style.min.css": "style.less"
+        },
+        options: {
+          cleancss: true
         }
       }
     },
-    sprite:{
-      all: {
-        src: 'path/to/your/sprites/*.png',
-        destImg: 'destination/of/spritesheet.png',
-        destCSS: 'destination/of/sprites.css'
-      }
-    },
+    // sprite:{
+    //   all: {
+    //     src: 'path/to/your/sprites/*.png',
+    //     destImg: 'destination/of/spritesheet.png',
+    //     destCSS: 'destination/of/sprites.css'
+    //   }
+    // },
     watch: {
       options: {
         livereload: true
@@ -37,13 +42,11 @@ module.exports = function(grunt) {
       //when .less files change, run the LESS task and livereload
       less: {
         files: ["**/*.less"],
-        tasks: ["less"]
+        tasks: ["less:dev"]
       }
     }
 
   });
-
   //default task: compile LESS, Minimize , and watch
-  grunt.registerTask("default", ["less", "cssmin", "watch"]);
-
+  grunt.registerTask("default", ["less:dist"]);
 }
