@@ -4,7 +4,7 @@ Template Name: Projects
 */
 get_header(); ?>
 	
-	<div class="page-content row">
+	<div class="content row">
     
  	   <h1><?php the_title(); ?></h1>
        
