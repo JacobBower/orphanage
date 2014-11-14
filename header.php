@@ -10,6 +10,11 @@
 				$(".header-nav").toggle(); // ... open or close the navigation
 			});
 		});
+		
+        jQuery().ready(function($) {
+    	h = $("header").outerHeight();
+    	$('.content').css('padding-top', h)
+	    });
 		</script>
 		<?php $host = $_SERVER['SERVER_NAME']; if ($host == 'localhost') : ?>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -24,7 +29,7 @@
 			<header class="header">
 				<div class="header-wrapper row">
 					<div class="header-left column-3 no-pad-left">
-						<a href="<?php bloginfo('url'); ?>" ><img src="" alt="200 Orphanages Worldwide logo" class="logo" /></a>
+						<a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="200 Orphanages Worldwide logo" class="logo" /></a>
 					</div>
 					<div class="header-right column-9 no-pad-right">
 						<div class="responsive-menu-wrapper">
@@ -32,9 +37,9 @@
 						</div>
 						<div class="share-buttons column-12">
 							<ul class="share-button-list">
-								<li class="column-3"><a href="#" >Donate</a></li>
-								<li class="column-3"><a href="#" >Volunteer</a></li>
-								<li class="column-3"><a href="#" >Share</a></li>
+								<li class="column-3 yellow"><a href="#" >Act</a></li>
+								<li class="column-3 blue"><a href="#" >Share</a></li>
+								<li class="column-3 red"><a href="#" >Give</a></li>
 							</ul>
 						</div>
 						<div class="header-nav-wrapper">
