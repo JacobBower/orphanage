@@ -116,7 +116,7 @@ img.logo {
   display: none;
 }
 .header-nav {
-  display: block;
+  display: none;
   clear:both;
 }
 .header-nav ul li {
@@ -395,6 +395,7 @@ footer {
 }
 .header-nav {
   display: block;
+
 }
 .header-nav ul {
   display: table;
