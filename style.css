@@ -3,8 +3,8 @@ RESPONSIVE */
 
 /* - - - - RESETS - - - - */
 body, body * {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 a img {
   border: none;
@@ -24,12 +24,12 @@ ul, ol {
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 img {
     width: auto;
     max-width: 100%;
-    height: auto !important; 
+    height: auto !important;
 }
 .wrapper {
   max-width: 960px;
@@ -41,13 +41,13 @@ img {
 .row:after {
     content: "";
     display: table;
-    clear: both; 
+    clear: both;
 }
 [class*='column-'] {
     float: left;
     padding: 1em;
     width: 100%;
-    min-height: 1px; 
+    min-height: 1px;
 }
 .no-pad-left {
   padding-left: 0;
@@ -126,7 +126,7 @@ img.logo {
   border-bottom: 1px solid #999;
 }
 .header-nav ul li a {
-  display: block; 
+  display: block;
   color: #fff;
 }
 .header-nav ul li a:hover{
@@ -315,49 +315,50 @@ footer {
 /* - - - - GRID - - - - */
 .wrapper {
     width: 96%;
-    max-width: 960px; 
+    max-width: 960px;
     padding: 0;
-}  
+}
 .column-1 {
-    width: 8.33333%; 
-}    
+    width: 8.33333%;
+}
 .column-2 {
-    width: 16.66667%; 
-}    
+    width: 16.66667%;
+}
 .column-3 {
-    width: 25%; 
-}   
+    width: 25%;
+}
 .column-4 {
-    width: 33.33333%; 
-}   
+    width: 33.33333%;
+}
 .column-5 {
-    width: 41.66667%; 
-}    
+    width: 41.66667%;
+}
 .column-6 {
-    width: 50%; 
-}   
+    width: 50%;
+}
 .column-7 {
-    width: 58.33333%; 
-}    
+    width: 58.33333%;
+}
 .column-8 {
-    width: 66.66667%; 
-}  
+    width: 66.66667%;
+}
 .column-9 {
-    width: 75%; 
-}    
+    width: 75%;
+}
 .column-10 {
-    width: 83.33333%; 
-}   
+    width: 83.33333%;
+}
 .column-11 {
-    width: 91.66667%; 
-}    
+    width: 91.66667%;
+}
 .column-12 {
-    width: 100%; 
-} 
+    width: 100%;
+}
 
 /* - - - - HEADER TABLET - - - - */
 .header-right {
   padding-top: 0;
+  padding-bottom:0;
 }
 .responsive-menu-img {
   display: none;
@@ -382,7 +383,7 @@ footer {
 }
 .share-buttons ul li a {
   display: block;
-  height: 40px;
+  height: 50px;
   line-height: 40px;
   text-align: center;
   color:#000;
@@ -394,7 +395,6 @@ footer {
   display: table;
   width: 100%;
   text-align: center;
-  padding-top: 20px;
 }
 .header-nav ul li {
   display: table-cell;
@@ -544,5 +544,5 @@ border-bottom: none;
 }
 
 @media screen and (min-width: 1056px) {
-  
+
 }
