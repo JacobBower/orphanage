@@ -31,10 +31,11 @@
 					<div class="header-left column-4 no-pad-left">
 						<a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="200 Orphanages Worldwide logo" class="logo" /></a>
 					</div>
+					<div class="responsive-menu-wrapper ">
+						<a href="#" class="responsive-menu"><img src="<?php bloginfo('template_directory'); ?>/img/menu-img.png" alt="responsive menu image" class="responsive-menu-img"/></a>
+					</div>
+
 					<div class="header-right column-8 no-pad-right">
-						<div class="responsive-menu-wrapper">
-							<a href="#" class="responsive-menu"><img src="<?php bloginfo('template_directory'); ?>/img/menu-img.png" alt="responsive menu image" class="responsive-menu-img"/></a>
-						</div>
 						<div class="share-buttons column-12">
 							<ul class="share-button-list">
 								<li class="column-3 yellow"><a href="#" >Act</a></li>
