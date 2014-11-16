@@ -10,7 +10,7 @@
 				$(".header-nav").toggle(); // ... open or close the navigation
 			});
 		});
-		
+
         jQuery().ready(function($) {
     	h = $("header").outerHeight();
     	$('.content').css('padding-top', h)
@@ -28,10 +28,10 @@
 		<body <?php body_class(); ?>>
 			<header class="header">
 				<div class="header-wrapper row">
-					<div class="header-left column-3 no-pad-left">
-						<a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="200 Orphanages Worldwide logo" class="logo" /></a>
+					<div class="header-left column-4 no-pad-left">
+						<a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="200 Orphanages Worldwide logo" class="logo" /></a>
 					</div>
-					<div class="header-right column-9 no-pad-right">
+					<div class="header-right column-8 no-pad-right">
 						<div class="responsive-menu-wrapper">
 							<a href="#" class="responsive-menu"><img src="<?php bloginfo('template_directory'); ?>/img/menu-img.png" alt="responsive menu image" class="responsive-menu-img"/></a>
 						</div>
@@ -43,11 +43,11 @@
 							</ul>
 						</div>
 						<div class="header-nav-wrapper">
-							<nav class="header-nav"> 
-								<?php wp_nav_menu( array( 
+							<nav class="header-nav">
+								<?php wp_nav_menu( array(
 									'theme_location' => 'header-menu' ,
 									'menu' => 'Header Menu' ,
-									'container'  => 'ul', 
+									'container'  => 'ul',
 								) ); ?>
 							</nav>
 						</div>
