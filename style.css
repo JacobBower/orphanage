@@ -116,8 +116,10 @@ img.logo {
   display: none;
 }
 .header-nav {
-  display: none;
   clear:both;
+}
+.hidden {
+  display:none;
 }
 .header-nav ul li {
   float: none;

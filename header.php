@@ -8,9 +8,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		$(window).load(function() { // enable function upon window load
+
 			$(".responsive-menu").click(function() { // when toggle is clicked...
-				$(".header-nav").toggle(); // ... open or close the navigation
+				$("nav").toggleClass("hidden"); // ... open or close the navigation
 			});
+
 		});
 
         jQuery().ready(function($) {
@@ -46,7 +48,7 @@
 							</ul>
 						</div>
 						<div class="header-nav-wrapper">
-							<nav class="header-nav">
+							<nav class="header-nav hidden">
 								<?php wp_nav_menu( array(
 									'theme_location' => 'header-menu' ,
 									'menu' => 'Header Menu' ,
