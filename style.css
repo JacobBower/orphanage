@@ -144,7 +144,8 @@ img.logo {
 }
 
 .menu ul li {
-  font-size:1.125em;
+  font-size:2em;
+  text-align:center;
 }
 
 /* - - - - CONTENT - - - -  */
@@ -362,7 +363,7 @@ footer {
   padding-top: 0;
   padding-bottom:0;
 }
-.responsive-menu-img {
+.responsive-menu-wrapper {
   display: none;
 }
 .share-buttons {
@@ -407,7 +408,9 @@ footer {
 .header-nav li:last-child {
 border-bottom: none;
 }
-
+.menu ul li {
+  font-size:1.25em;
+}
 /* - - - - CONTENT TABLET - - - - */
 /*.mission-statement {
   padding-right: 1em;
