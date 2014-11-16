@@ -95,6 +95,7 @@ p {
   padding: 0 20px;
   margin: 0 auto;
   position:relative;
+  height:100px;
 }
 img.logo {
   width: 100%;
@@ -102,8 +103,14 @@ img.logo {
 }
 .header-left {
   float: left;
-  width: 70%;
+  width: 45%;
   padding: 0 1em 0 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+
 }
 .header-right {
   float: right;
@@ -140,8 +147,17 @@ img.logo {
 }
 .responsive-menu-wrapper {
   float:right;
-  width:14.893617%;
-  padding-top:20px;
+  width:50px;
+  height:105px;
+
+}
+.responsive-menu-img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+
 }
 
 .menu ul li {
@@ -546,4 +562,13 @@ border-bottom: none;
 
 @media screen and (min-width: 1056px) {
 
+}
+/*Resize Logo On Small screen*/
+@media screen and (max-width: 600px) {
+  .header-left {
+    width:70%;
+  }
+  .header-left a {
+    height:0px;
+  }
 }
