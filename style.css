@@ -94,6 +94,7 @@ p {
   max-width: 960px;
   padding: 0 20px;
   margin: 0 auto;
+  position:relative;
 }
 img.logo {
   width: 100%;
@@ -106,6 +107,7 @@ img.logo {
 }
 .header-right {
   float: right;
+  padding:0;
 }
 .header-menu {
   display: none;
@@ -136,18 +138,18 @@ img.logo {
 }
 .responsive-menu-wrapper {
   float:right;
-  width:140px;
-}
-.responsive-menu-img {
-  margin-top: 5px;
-  margin-bottom:20px;
+  width:14.893617%;
+  padding-top:20px;
 }
 
 .menu ul li {
   font-size:2em;
   text-align:center;
 }
+.menu ul li:last-child {
+  margin-bottom:10px;
 
+}
 /* - - - - CONTENT - - - -  */
 .content {
   width: 100%;
