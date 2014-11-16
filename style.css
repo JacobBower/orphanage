@@ -32,7 +32,7 @@ img {
     height: auto !important;
 }
 .wrapper {
-  max-width: 960px;
+    max-width: 940px;
     width: 100%;
     padding: 0 1em;
     margin: 0 auto;
@@ -406,7 +406,6 @@ footer {
   border-top: none;
 }
 .header-left {
-  padding-right: 2em;
 }
 .header-nav li:last-child {
 border-bottom: none;
@@ -418,9 +417,6 @@ border-bottom: none;
 /*.mission-statement {
   padding-right: 1em;
 }*/
-.content-section {
-  padding-right: 1em;
-}
 .current-projects {
   padding-left: 1em;
 }
