@@ -12,6 +12,12 @@
 						<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/twitter@2.png" alt="twitter icon" /></a></li>
 					</ul>
 				</div>
+                
+                <ul class="share-button-list row">
+						<li class="button-footer column-4 no-pad-left"><a href="#" class="yellow">Act</a></li>
+						<li class="button-footer column-4 center"><a href="#" class="blue">Share</a></li>
+						<li class="button-footer column-4 no-pad-right"><a href="#" class="red">Give</a></li>
+					</ul>
 			</section>
             
             <div class="footer-left column-4 no-pad-left no-pad-right">
@@ -22,6 +28,9 @@
 					<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/twitter.png" alt="twitter icon" /></a></li>
 				</ul>
 			</div>
+            
+            
+                    
 			<aside class="footer-right column-8">
 				<nav class="footer-nav">
 					<?php wp_nav_menu( array( 

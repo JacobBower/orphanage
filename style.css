@@ -313,6 +313,14 @@ footer {
 .share-button-list .column-4 {
   width: 33.3333%;
 }
+.share-button-list a {
+  color:#000;
+  font-size: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+}
 .center {
   padding-left: .5em;
   padding-right: .5em;
@@ -322,7 +330,6 @@ footer {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: #FFF;
 }
 .clearfix {
   clear: both;
