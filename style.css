@@ -63,8 +63,8 @@ body {
 header {
   background: #434343;
   width: 100%;
+  height:auto;
   margin: 0 auto;
-  position: fixed;
   -webkit-box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.75);
@@ -96,6 +96,7 @@ p {
   margin: 0 auto;
   position:relative;
   height:100px;
+  margin: 0 auto;
 }
 img.logo {
   width: 100%;
@@ -110,11 +111,14 @@ img.logo {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-
 }
 .header-right {
   float: right;
   padding:0;
+}
+.header-right {
+  float: right;
+  width: 100%;
 }
 .header-menu {
   display: none;
@@ -172,7 +176,7 @@ img.logo {
 .content {
   width: 100%;
   margin: 0 auto;
-  z-index:1;
+  z-index:10;
 }
 .content-section {
   padding: 0;
@@ -222,11 +226,6 @@ a.button-small {
   margin: 15px 10px 10px 0;
   text-decoration: none;
 }
-/*.post-comment {
-  width: 100%;
-  height: auto;
-  float: left;
-}*/
 .comment-image {
   border:1px solid #CC9;
   border-radius: 50%;
@@ -379,6 +378,9 @@ footer {
 }
 
 /* - - - - HEADER TABLET - - - - */
+header {
+	  position: fixed;
+}
 .header-right {
   padding-top: 0;
   padding-bottom:0;
@@ -389,13 +391,12 @@ footer {
 .share-buttons {
   display: block;
   padding: 0 0 0 .8em;
-  border-radius: 0px 0px 10px 10px;
 }
 .share-buttons ul li{
   padding: 0;
-  margin: 0 .5em 0 .5em;
+  margin: 0 .4em 0 .4em;
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   color:#000;
   -moz-border-radius: 0px 0px 10px 10px;
   -webkit-border-radius: 0px 0px 10px 10px;
@@ -403,6 +404,7 @@ footer {
   -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+  border-radius: 0px 0px 10px 10px;
 }
 .share-buttons ul li a {
   display: block;
@@ -424,6 +426,7 @@ footer {
   border-top: none;
 }
 .header-left {
+	padding: 0;
 }
 .header-nav li:last-child {
 border-bottom: none;
@@ -432,9 +435,9 @@ border-bottom: none;
   font-size:1.25em;
 }
 /* - - - - CONTENT TABLET - - - - */
-/*.mission-statement {
-  padding-right: 1em;
-}*/
+.content {
+	  padding-top:102px;
+}
 .current-projects {
   padding-left: 1em;
 }
@@ -509,9 +512,6 @@ border-bottom: none;
   width: 50%;
   float:left;
 }
-/*.post-comment {
-  width: 57.142857%}
-  */
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: block;

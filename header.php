@@ -15,10 +15,6 @@
 
 		});
 
-        jQuery().ready(function($) {
-    	h = $("header").outerHeight();
-    	$('.content').css('padding-top', h)
-	    });
 		</script>
 		<?php $host = $_SERVER['SERVER_NAME']; if ($host == 'localhost') : ?>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -31,6 +27,7 @@
 	</head>
 		<body <?php body_class(); ?>>
 			<header class="header">
+
 				<div class="header-wrapper row">
 					<div class="header-left column-4 no-pad-left">
 						<a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="200 Orphanages Worldwide logo" class="logo" /></a>
@@ -40,6 +37,7 @@
 					</div>
 
 					<div class="header-right column-8 no-pad-right">
+
 						<div class="share-buttons column-12">
 							<ul class="share-button-list">
 								<li class="column-3 yellow"><a href="#" >Act</a></li>
