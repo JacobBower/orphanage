@@ -58,6 +58,7 @@ function post_type_projects() {
       'label'  => 'Projects'
     );
     register_post_type( 'project', $args );
+    register_taxonomy_for_object_type( 'post_tag', 'projects' );
 }
 add_action( 'init', 'post_type_projects' );
 
