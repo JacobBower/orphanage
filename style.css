@@ -271,10 +271,11 @@ a.button-small {
 .gallery-content li {
   width: 50%;
   float: left;
-  padding: 1em;
+  padding: 1em .5em 0 .5em;
 }
 .gallery-content li img {
   width: 100%;
+  padding-bottom: .5em;
 }
 .content-headline {
   height: 75px;
@@ -524,12 +525,8 @@ border-bottom: none;
 .gallery-content p {
   padding-right: 1em;
 }
-.gallery-content .row img {
-  width: 100%;
-}
-.gallery-content .row .image-row-container {
-  width: 50%;
-  float:left;
+.gallery-content li {
+  width: 25%;
 }
 
 /* - - - - WIDGETS - - - - */
