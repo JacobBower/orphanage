@@ -99,9 +99,8 @@ p {
   margin: 0 auto;
 }
 img.logo {
-  width: 100%;
+  max-width: 250px;
   height: auto;
-  border: 1px solid black;
 }
 .header-left {
   float: left;
@@ -439,6 +438,7 @@ header {
 .header-nav ul {
   display: table;
   width: 100%;
+  padding-left: .75em;
 }
 .header-nav ul li {
   display: table-cell;
