@@ -560,6 +560,7 @@ border-bottom: none;
 }
 .copy {
   color:#fff;
+  font-style:italic;
   font-size: .875em;
   padding-top: 1.5em;
   text-align: left;
