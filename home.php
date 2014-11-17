@@ -68,16 +68,7 @@ get_header(); ?>
 				</div><!--row-->
 
 			</section>
-			<section class="social-mobile">
-				<div class="row">
-					<ul class="social-icons">
-						<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin-128.png" alt="linkedin icon" /></a></li>
-						<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/pinterest-128.png" alt="pinterest icon" /></a></li>
-						<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/facebook-128.png" alt="facebook icon" /></a></li>
-						<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/twitter-128.png" alt="twitter icon" /></a></li>
-					</ul>
-				</div>
-			</section>
+			
 
 </div> <!-- CONTENT -->
 
