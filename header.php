@@ -14,7 +14,6 @@
 			});
 
 		});
-
 		</script>
 		<?php $host = $_SERVER['SERVER_NAME']; if ($host == 'localhost') : ?>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -22,7 +21,9 @@
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="all" />
 		<?php endif; ?>
 
-		<script src="less.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/owl.theme.default.css">
+
 		<?php wp_head(); ?>
 	</head>
 		<body <?php body_class(); ?>>

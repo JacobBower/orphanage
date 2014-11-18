@@ -81,3 +81,4 @@ function post_type_projects() {
 add_action( 'init', 'post_type_projects' );
 
 add_image_size( 'custom_size', 300, 300, array( 'center', 'center' ) );
+

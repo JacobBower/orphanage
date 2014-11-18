@@ -186,10 +186,13 @@ img.logo {
 .border-top {
   display: none;
 }
-.main-content-slider {
-  height: 150px;
-  border: 1px solid black;
+#main-content-slider {
   margin-top: 1em;
+}
+#main-content-slider .item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .current-projects .section-left {
   width: 50%;

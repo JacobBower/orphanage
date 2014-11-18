@@ -9,9 +9,16 @@ get_header(); ?>
 
 			<section class="content-section">
 				<div class="row">
-					<div class="main-content-slider column-12">
-						<img src="" alt="content-slider" />
+
+					<div id="main-content-slider" class="owl-carousel owl-theme column-12">
+						<div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/banner-1.jpg" alt="banner"></div>
+						<div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/banner-2.jpg" alt="banner"></div>
 					</div>
+
+
+					<!-- <div class="main-content-slider column-12">
+						<img src="" alt="content-slider" />
+					</div> -->
 				</div>
 			</section>
 			<section class="content-section">

@@ -45,5 +45,25 @@
 		<div class="clearfix"></div>
 	</footer>
 <?php wp_footer(); ?>
+
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script>
+<script>
+	$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    items : 1, 
+	itemsDesktop : false,
+	itemsDesktopSmall : false,
+	itemsTablet: false,
+	itemsMobile : false
+});
+
+});
+
+</script>
 </body>
 </html>
