@@ -1,5 +1,10 @@
 <?php
 
+if ( function_exists( 'add_theme_support' ) ) { 
+    // add featured image/thumbnail support
+    add_theme_support('post-thumbnails');
+}
+
 /* Register custom menus */
 function register_my_menus() {
   register_nav_menus(
@@ -53,51 +58,26 @@ function register_my_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
 function post_type_projects() {
-    $args = array(
-      'public' => true,
-      'label'  => 'Projects'
+	// register post type
+    $postTypeArgs = array(
+		'label'  => 'Projects',
+		'public' => true,
+		'rewrite' => array("slug" => "projects"),
+		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
     );
-    register_post_type( 'project', $args );
-    register_taxonomy_for_object_type( 'post_tag', 'projects' );
+    register_post_type( 'project', $postTypeArgs );
+    // Register taxonomy
+	$taxArgs = array(
+		'label'                         => 'Categories',
+		'public'                        => true,
+		'hierarchical'                  => true,
+		'show_ui'                       => true,
+		'show_in_nav_menus'             => true,
+		'args'                          => array( 'orderby' => 'term_order' ),
+		'query_var'                     => true
+	);
+	register_taxonomy( 'project_categories', 'project', $taxArgs );
 }
 add_action( 'init', 'post_type_projects' );
 
 add_image_size( 'custom_size', 300, 300, array( 'center', 'center' ) );
-// add_action('init', 'post_type_projects' );
-// function post_type_projects() {
-// 	$labels = array(
-//  		'name'               => _x( 'Projects', 'post type general name' ),
-// 		'singular_name'      => _x( 'Project', 'post type singular name' ),
-// 		'menu_name'          => _x( 'Projects', 'admin menu' ),
-// 		'name_admin_bar'     => _x( 'Project', 'add new on admin bar' ),
-// 		'add_new'            => _x( 'Add New', 'project' ),
-// 		'add_new_item'       => __( 'Add New Project' ),
-// 		'new_item'           => __( 'New Project' ),
-// 		'edit_item'          => __( 'Edit Project' ),
-// 		'view_item'          => __( 'View Project' ),
-// 		'all_items'          => __( 'All Projects' ),
-// 		'search_items'       => __( 'Search Projects' ),
-// 		'parent_item_colon'  => __( 'Parent Projects:' ),
-// 		'not_found'          => __( 'No projects found.' ),
-// 		'not_found_in_trash' => __( 'No projects found in Trash.' )
- 		
-//  	);
-//  	$args = array(
-//  		'lables' 			 => $labels,
-//  		'public' 			 => true,
-//  		'publicly_queryable' => true,
-// 	    'show_ui' 			 => true, 
-// 	    'show_in_menu' 		 => true, 
-// 	    'query_var' 		 => true,
-// 	    'rewrite' 			 => array( 'slug' => 'projects' ),
-// 	    'capability_type' 	 => 'page',
-// 	    'has_archive' 		 => false, 
-// 	    'hierarchical' 		 => false,
-// 	    'menu_position' 	 => null,
-// 	    'supports' 			 => array( 'title', 'editor', 'thumbnail', 'page-attributes', 'comments' )
-// 	);
-//     register_post_type( 'project', $args );
-// 	// register_taxonomy_for_object_type( 'post_tag', 'projects' );
-// }
-
- 

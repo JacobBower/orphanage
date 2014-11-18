@@ -13,44 +13,68 @@ get_header(); ?>
         </div>
        
        <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
-
-            <h3 class="content-headline">Current Projects</h3>
-            <?php if ( have_rows('project') ): ?>
-              <ul>
-              <?php while ( have_rows( 'project') ) : the_row();
-
-              $image = get_sub_field('project_image');
-              $title = get_sub_field('project_title');
-              $description = get_sub_field('project_description');
-              $image_size = $image['sizes']['thumbnail'];
-
-              ?>
-                <li>
-                  <a href="<?php the_permalink(); ?>">
-                    <img src="<?php echo $image_size; ?>" alt="<?php echo $image['alt'] ?>" />
-                    <div><?php the_sub_field('project_description'); ?></div>
-                  </a>
-                </li>
-
-              <?php endwhile; ?>
-              </ul>
-
-            <?php endif; ?>
-            
-				<!-- <div class="main-content-slider column-12">
-						<img src="" alt="content-slider" />
-				</div> -->
+       <h3 class="content-headline">Current Projects</h3>
+       <ul>
+         <?php
+          $args = array(
+            'post_type' => 'project',
+            'posts_per_page' => -1,
+            'orderby' => 'date',
+            'order' => 'DESC',
+            'tax_query' => array(
+              array(
+                'taxonomy' => 'project_categories',
+                'field' => 'slug',
+                'terms' => array('current'),
+                'include_children' => false
+              )
+            )
+          );
+          $loop = new WP_Query( $args );
+          while ( $loop->have_posts() ) : $loop->the_post(); ?>
+          <li>
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail('thumbnail'); ?>
+              <?php the_title(); ?>
+            </a>
+          </li>
+          <?php endwhile; ?>
+        </ul>
 		
        </section>
        <div class="clearfix"></div>
        <!--GALLERY-->
        
        <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
-            <h3 class="content-headline">Past Projects</h3>
-               				
-					<div class="main-content-slider column-12">
-						<img src="" alt="content-slider" />
-					</div>
+        <h3 class="content-headline">Past Projects</h3>
+
+        <ul>
+         <?php
+          $args = array(
+            'post_type' => 'project',
+            'posts_per_page' => -1,
+            'orderby' => 'date',
+            'order' => 'DESC',
+            'tax_query' => array(
+              array(
+                'taxonomy' => 'project_categories',
+                'field' => 'slug',
+                'terms' => array('past'),
+                'include_children' => false
+              )
+            )
+          );
+          $loop = new WP_Query( $args );
+          while ( $loop->have_posts() ) : $loop->the_post(); ?>
+          <li>
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail('thumbnail'); ?>
+              <?php the_title(); ?>
+            </a>
+          </li>
+          <?php endwhile; ?>
+        </ul>
+               			
        </section>
        <div class="clearfix"></div>
        

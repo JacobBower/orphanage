@@ -24,16 +24,37 @@ get_header(); ?>
 						<p>What's your something?</p>
 						<p>- 200 Orphanages Worldwide</p>
 					</div>
+
 					<aside class="current-projects column-6 no-pad-left no-pad-right">
 						<h2 class="section-headline">Current Projects</h2>
-						<div class="section-left column-6 no-pad-left no-pad-right">
-							<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""/>
-							<a href="#" class="button-small">Button</a>
-						</div>
-						<div class="section-right column-6 no-pad-left no-pad-right">
-							<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""/>
-							<a href="#" class="button-small">Button</a>
-						</div>
+						
+
+						<?php
+				          	$args = array(
+					            'post_type' => 'project',
+					            'posts_per_page' => 2,
+					            'orderby' => 'date',
+					            'order' => 'DESC',
+					            'tax_query' => array(
+									array(
+						                'taxonomy' => 'project_categories',
+						                'field' => 'slug',
+						                'terms' => array('current'),
+						                'include_children' => false
+									)
+					            )
+							);
+				          $loop = new WP_Query( $args );
+				          $i = 0;
+				          while ( $loop->have_posts() ) : $loop->the_post(); $i++; ?>
+				          
+							<div class="section-<?php if($i == 1) { echo 'left'; } else { echo 'right'; }; ?> column-6 no-pad-left no-pad-right">
+								<?php the_post_thumbnail('custom_size'); ?>
+								<a href="<?php the_permalink(); ?>" class="button-small">Button</a>
+							</div>
+
+				          <?php endwhile; ?>
+
 					</aside> <!-- CURRENT PROJECTS -->
 				</div><!--row-->
 					<!-- <div class="clearfix"></div> -->
