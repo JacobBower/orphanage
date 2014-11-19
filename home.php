@@ -34,7 +34,7 @@ get_header(); ?>
 
 					<aside class="current-projects column-6 no-pad-left no-pad-right">
 						<h2 class="section-headline">Current Projects</h2>
-						
+
 
 						<?php
 				          	$args = array(
@@ -54,7 +54,7 @@ get_header(); ?>
 				          $loop = new WP_Query( $args );
 				          $i = 0;
 				          while ( $loop->have_posts() ) : $loop->the_post(); $i++; ?>
-				          
+
 							<div class="section-<?php if($i == 1) { echo 'left'; } else { echo 'right'; }; ?> column-6 no-pad-left no-pad-right">
 								<?php the_post_thumbnail('custom_size'); ?>
 								<a href="<?php the_permalink(); ?>" class="button-small">Button</a>
@@ -96,9 +96,9 @@ get_header(); ?>
 				</div><!--row-->
 
 			</section>
-			
+
 
 </div> <!-- CONTENT -->
 
-<?php 
+<?php
 get_footer(); ?>

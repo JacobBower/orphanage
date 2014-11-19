@@ -78,6 +78,8 @@ p {
   font-size: 1em;
   padding: 1em 0;
   line-height: 1.25;
+  color: #595959;
+  font-family:Arial, Helvetica, sans-serif;
 }
 .yellow {
   background-color:#ffff00;
@@ -87,6 +89,9 @@ p {
 }
 .red {
   background-color:#ff6963;
+}
+/*Button Class*/
+.btn-blue {
 }
 
 /* - - - - HEADER - - - - */
@@ -148,7 +153,7 @@ img.logo {
 .header-nav ul li a:hover{
   text-decoration:underline;
   color:#07b0ed;
-  display: block; 
+  display: block;
 }
 .header-nav ul li.current_page_item a{
   text-decoration:underline;
@@ -212,9 +217,12 @@ a.button-small {
   clear: both;
   width: 150px;
   height: 40px;
-  background: #E0E0E0;
   text-align: center;
   line-height: 40px;
+  background-color:#07b0ed;
+  border-radius: 10px;
+  box-shadow: 5px 7px 5px black;
+
 }
 
 /* - - -  PAGE CONTENT - - - - */
@@ -255,6 +263,10 @@ a.button-small {
   width: 100px;
   margin: 15px 10px 10px 0;
   text-decoration: none;
+  background-color:#07b0ed;
+  border-radius: 10px;
+  box-shadow: 5px 7px 5px black;
+
 }
 .partner-logo {
   width: 25%;
@@ -330,7 +342,7 @@ footer {
   width: 33.3333%;
 }
 .share-button-list a {
-  color:#000;
+  color:black;
   font-size: 1em;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
@@ -494,7 +506,10 @@ border-bottom: none;
   height: 40px;
   text-align: center;
   line-height: 40px;
-  background: #E0E0E0;
+  background-color:#ff6963;
+  border-radius: 10px;
+  box-shadow: 5px 7px 5px black;
+
 }
 .blog-post .button-small {
   float: left;
