@@ -42,23 +42,6 @@
                 <p>Sorry, no posts matched your criteria.</p>
                 <?php endif; ?>
             <!-- END CONTENT -->
-                	<!-- <p>
-                    	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
-                        paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne 'ncannulate fucker trenette campanelle. 
-                        Dick frak scialatelli cellentani lanterne. Lasagnotte mezzani pasta pasta al ceppo cavatappi fagioloni rat fart. 
-                    </p>
-                    <p>
-                    	Lasagnotte mezzani pasta pasta al ceppo cavatappi fagioloni rat fart. Frak creste di galli shitty sumbitch damn mezzani 
-                        pasta ravioli linguine tortiglioni ditalini bavettine trofie pennoni rotini. Zitoni lagane gnocchi trofie calamarata mostaccioli. 
-                        Creste di galli fagioloni sorprese fuck lasagne perciatelli.
-                    </p>
-                    <p>
-                    	Fettucelle booyah bitches farfalline bavettine penne rigate bitches fiori lagane trennette mafalde. Gnocchi trofie campanelle gnocchi 
-                        vermicelli capunti orzo lagane gomito sacchettoni torchio. Quadrefiore frak chifferi linguettine lumaconi.
-                    </p>
-                    <br />
-                    <br />
-                    <br /> -->
         </div>
     </div>   
       

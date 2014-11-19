@@ -51,14 +51,14 @@
 <script>
 	$(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
+    loop : true,
+    autoplay : true,
+    autoplayTimeout : 3000,
+    autoplayHoverPause : true,
     items : 1, 
 	itemsDesktop : false,
 	itemsDesktopSmall : false,
-	itemsTablet: false,
+	itemsTablet : false,
 	itemsMobile : false
 });
 

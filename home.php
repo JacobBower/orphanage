@@ -10,7 +10,7 @@ get_header(); ?>
 			<section class="content-section">
 				<div class="row">
 
-					<div id="main-content-slider" class="owl-carousel owl-theme column-12">
+					<div id="main-content-slider" class="owl-carousel owl-theme column-12 no-pad-left no-pad-right">
 						<div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/banner-1.jpg" alt="banner"></div>
 						<div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/banner-2.jpg" alt="banner"></div>
 					</div>
