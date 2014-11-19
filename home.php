@@ -15,10 +15,6 @@ get_header(); ?>
 						<div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/banner-2.jpg" alt="banner"></div>
 					</div>
 
-
-					<!-- <div class="main-content-slider column-12">
-						<img src="" alt="content-slider" />
-					</div> -->
 				</div>
 			</section>
 			<section class="content-section">
