@@ -18,14 +18,7 @@
         </p>
         
                 <?php the_content('More &raquo;'); ?>
-                <nav class="post-nav">
-                    <div class="alignleft">
-                        <?php previous_post_link(); ?>
-                    </div> 
-                    <div class="alignright">
-                        <?php next_post_link(); ?>
-                    </div>
-                </nav>
+                
     
                 <?php endwhile; else: ?>
                 <p>Sorry, no posts matched your criteria.</p>

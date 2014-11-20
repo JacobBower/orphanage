@@ -2,13 +2,14 @@
 
 	<div class="content row">
     
-    <h1><?php the_title(); ?></h1>
+    <h1>Recent Posts</h1>
+    <br />
     
         <div class="sidebar column-4 no-pad-right">
                 <?php get_sidebar('secondary'); ?>
         </div>
         
-	<!-- START CONTENT -->
+	<!-- START CONTENT -->	
 		<?php if (have_posts()) : ?>
 		    <?php while (have_posts()) : the_post(); ?>
             
@@ -22,7 +23,6 @@
 		        </div>
 		    <?php endwhile; ?>
 
-				<p>Sorry, no posts matched your criteria.</p>
 		<?php endif; ?>
 		<!-- END CONTENT -->
 	</div> <!-- CONTENT -->
