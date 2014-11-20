@@ -1,9 +1,5 @@
-</div> <!--WRAPPER-->
-	<div class="clearfix"></div>
-	<footer>
-		<div class="footer-wrapper row no-pad-left no-pad-right">
-			
-            <section class="social-mobile">
+
+<section class="social-mobile">
 				<div class="row">
 					<ul class="social-icons">
 						<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin@2.png" alt="linkedin icon" /></a></li>
@@ -12,13 +8,22 @@
 						<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/twitter@2.png" alt="twitter icon" /></a></li>
 					</ul>
 				</div>
-                
+                </section>
+
+</div> <!--WRAPPER-->
+	
+	<footer>
+    
+		<div class="footer-wrapper row">
+			
+            <section class="social-mobile">
                 <ul class="share-button-list row">
-						<li class="button-footer column-4 no-pad-left"><a href="#" class="yellow">Act</a></li>
-						<li class="button-footer column-4 center"><a href="#" class="blue">Share</a></li>
-						<li class="button-footer column-4 no-pad-right"><a href="#" class="red">Give</a></li>
+						<li class="button-footer column-4"><a href="#" class="yellow">Act</a></li>
+						<li class="button-footer column-4"><a href="#" class="blue">Share</a></li>
+						<li class="button-footer column-4"><a href="#" class="red">Give</a></li>
 					</ul>
-			</section>
+            </section>
+			
             
             <div class="footer-left column-4 no-pad-left no-pad-right">
 				<ul class="social-icons">
