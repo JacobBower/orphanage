@@ -46,18 +46,6 @@
             <!-- END CONTENT -->
                 	
         </div>
-    </div>   
-      
-    <div class="post-comment column-8">
-        	<br />
-      		<h3>Comments</h3>
-            	<div class="comment-image"><br /><br /><br /><a href="#">IMG</a></div>
-                	<br />
-                	<h4>Firstname Lastname</h4>
-                    <h5><em>October 23, 2014</em></h5>
-                    <br />
-                    	<p>Bavettine penne rigate bitches fiori lagane trennette mafalde. Gnocchi 
-                        trofie campanelle gnocchi vermicelli capunti orzo lagane gomito sacchettoni.</p>	
     </div>
 
 <?php get_footer(); ?>

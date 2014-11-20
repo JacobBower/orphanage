@@ -97,10 +97,6 @@ p {
 .red {
   background-color:#ff6963;
 }
-/*Button Class*/
-.btn-blue {
-}
-
 /* - - - - HEADER - - - - */
 .header-wrapper {
   max-width: 960px;
@@ -222,16 +218,20 @@ img.logo {
 a.button-small {
   display: block;
   clear: both;
-  width: 150px;
-  height: 40px;
+  width: 120px;
+  height: 30px;
   text-align: center;
-  line-height: 40px;
+  line-height: 30px;
+  color: #FFF;
   background-color:#07b0ed;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-
+}
+a.button-small:hover,
+a.button-small:focus {
+  background-color: #434343;
 }
 
 /* - - -  PAGE CONTENT - - - - */
@@ -246,7 +246,7 @@ a.button-small {
   margin: 15px 10px 10px 0;
   text-decoration: none;
 }
-.comment-image {
+/*.comment-image {
   border:1px solid #CC9;
   border-radius: 50%;
   text-align:center;
@@ -254,28 +254,12 @@ a.button-small {
   width:120px;
   height:120px;
   margin: 15px 20px 15px 0;
-}
+}*/
 .pad-bottom{
   padding-bottom: 1em;
 }
 .border-bottom {
   border-bottom:solid 1px;
-}
-.button {
-  display: inline-block;
-  text-align: center;
-  border:1px solid #CC9;
-  border-radius: 4px;
-  list-style-type: none;
-  padding: 3px;
-  width: 100px;
-  margin: 15px 10px 10px 0;
-  text-decoration: none;
-  background-color:#07b0ed;
-  border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
 }
 .partner-logo {
   width: 25%;
@@ -530,6 +514,7 @@ border-bottom: none;
   margin-top: 1em;
   text-align: center;
   line-height: 40px;
+  color: #FFF;
   background-color:#ff6963;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -537,7 +522,10 @@ border-bottom: none;
   -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-
+}
+.button-large:hover,
+.button-large:focus {
+  background-color: #434343;
 }
 .blog-post .button-small {
   float: left;
