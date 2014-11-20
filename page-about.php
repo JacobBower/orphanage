@@ -26,9 +26,8 @@ get_header(); ?>
                     <img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""  class="column-4 no-pad-left no-pad-right"/>
                         <div class="leadership-description column-8 no-pad-right">
                         <h4>Title</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-                        <a href="" class="button">Button</a>
-                        </p>
+                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="button-small">Button</a>
                         </div>
                 </section><!--ABOUT-LEADERSHIP-POST-->
                 <section class="section-description row">
@@ -36,25 +35,23 @@ get_header(); ?>
                     <img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""  class="column-4 no-pad-left no-pad-right"/>
                         <div class="leadership-description column-8 no-pad-right">
                         <h4>Title</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-                        <a href="" class="button">Button</a>
-                        <br />
-                        <a href="" class="button">More</a>
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="button-small">Button</a>
                         </div>
+                        <div class="clearfix"></div>
+                        <a href="" class="button-large">More</a>
                 </section><!--ABOUT-LEADERSHIP-POST-->
                 	
     	</section><!--ABOUT-LEADERSHIP-->
 		
-        <section class="section-content column-8 no-pad-left">
+        <section class="content-section column-8 no-pad-left">
         	<h3 class="pad-bottom">Our Partners</h3>
             	<div class="partners row">
                     <h4>Title</h4>
                     	<div class="partner-logo column-4">Logo</div>
                         <div class="partner-description column-8 no-pad-right">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-                        <a href="" class="button">Button</a>
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="button-small">Button</a>
                         </div>
                 </div><!--PARTNERS-->
                 <br />
@@ -62,9 +59,8 @@ get_header(); ?>
                 	<h4>Title</h4>
                     	<div class="partner-logo column-4">Logo</div>
                         <div class="partner-description column-8 no-pad-right">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-                        <a href="" class="button">Button</a>
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="button-small">Button</a>
                         </div>
                 </div><!--PARTNERS-->
         
