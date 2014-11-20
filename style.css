@@ -449,6 +449,10 @@ footer {
   text-align: center;
   color:#000;
 }
+.share-buttons ul li a:hover,
+.share-buttons ul li a:focus {
+  text-decoration: underline;
+}
 .header-nav {
   display: block;
 
