@@ -15,8 +15,7 @@ get_header(); ?>
         <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
             <h3>Content Title</h3>
         	<p>
-            	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
-                paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
+            	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </p>
             <div class="row">
                 <div class="image-row-container">
@@ -45,8 +44,7 @@ get_header(); ?>
         <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
             <h3>Content Title</h3>
             <p>
-                Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
-                paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne.Dick frak pasta al ceppo cavatappi fagioloni rat fart. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </p>
             <div class="row">
                 <div class="image-row-container">

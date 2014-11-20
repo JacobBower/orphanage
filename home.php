@@ -80,7 +80,7 @@ get_header(); ?>
 							<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" class="column-4"/>
 							<div class="blog-description column-8">
 								<h4 class="blog-post-title">Title</h4>
-								<p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 								<a href="#" class="button-small">Button</a>
 							</div> <!-- BLOG DESCRIPTION -->
 						</section>

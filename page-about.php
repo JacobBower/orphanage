@@ -16,11 +16,7 @@ get_header(); ?>
         <section class="content-section border-bottom column-8 no-pad-left no-pad-right">
                 <h3>Our Mission Statement</h3>
                 	<p>
-                    	Pasta ipsum dolor sit amet shitty bavettine spirali agnolotti calamaretti. Perciatelli rigatoncini capellini farfalle 
-                        paccheri cellentani tortelloni fettuce fuckers asshat fusilli vermicelli sagne 'ncannulate fucker trenette campanelle. 
-                        Dick frak scialatelli cellentani lanterne. Lasagnotte mezzani pasta pasta al ceppo cavatappi fagioloni rat fart. 
-                    	Fettucelle booyah bitches farfalline bavettine penne rigate bitches fiori lagane trennette mafalde. Gnocchi trofie campanelle gnocchi 
-                        vermicelli capunti orzo lagane gomito sacchettoni torchio. Quadrefiore frak chifferi linguettine lumaconi.
+                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
         </section>
 		<section class="content-section border-bottom column-8 no-pad-left">
@@ -30,8 +26,7 @@ get_header(); ?>
                     <img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""  class="column-4 no-pad-left no-pad-right"/>
                         <div class="leadership-description column-8 no-pad-right">
                         <h4>Title</h4>
-                    	<p>Bavettine penne rigate bitches fiori lagane trennette mafalde. Gnocchi 
-                        trofie campanelle gnocchi vermicelli capunti orzo.<br />
+                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
                         <a href="" class="button">Button</a>
                         </p>
                         </div>
@@ -41,8 +36,7 @@ get_header(); ?>
                     <img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""  class="column-4 no-pad-left no-pad-right"/>
                         <div class="leadership-description column-8 no-pad-right">
                         <h4>Title</h4>
-                    	<p>Bavettine penne rigate bitches fiori lagane trennette mafalde. Gnocchi 
-                        trofie campanelle gnocchi vermicelli capunti orzo.<br />
+                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
                         <a href="" class="button">Button</a>
                         <br />
                         <a href="" class="button">More</a>
@@ -58,8 +52,7 @@ get_header(); ?>
                     <h4>Title</h4>
                     	<div class="partner-logo column-4">Logo</div>
                         <div class="partner-description column-8 no-pad-right">
-                        <p>Gnocchi trofie campanelle gnocchi 
-                        vermicelli capunti orzo lagane.<br />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
                         <a href="" class="button">Button</a>
                         </p>
                         </div>
@@ -69,8 +62,7 @@ get_header(); ?>
                 	<h4>Title</h4>
                     	<div class="partner-logo column-4">Logo</div>
                         <div class="partner-description column-8 no-pad-right">
-                        <p>Gnocchi trofie campanelle gnocchi 
-                        vermicelli capunti orzo lagane.<br />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
                         <a href="" class="button">Button</a>
                         </p>
                         </div>

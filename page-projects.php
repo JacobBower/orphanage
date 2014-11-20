@@ -12,7 +12,7 @@ get_header(); ?>
             <?php get_sidebar('secondary'); ?>
         </div>
        
-       <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
+       <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
        <h3 class="content-headline">Current Projects</h3>
        <ul>
          <?php
@@ -34,7 +34,7 @@ get_header(); ?>
           while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <li>
             <a href="<?php the_permalink(); ?>">
-              <?php the_post_thumbnail('thumbnail'); ?>
+              <?php the_post_thumbnail('custom_size'); ?>
               <?php the_title(); ?>
             </a>
           </li>
@@ -45,7 +45,7 @@ get_header(); ?>
        <div class="clearfix"></div>
        <!--GALLERY-->
        
-       <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
+       <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
         <h3 class="content-headline">Past Projects</h3>
 
         <ul>
@@ -68,7 +68,7 @@ get_header(); ?>
           while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <li>
             <a href="<?php the_permalink(); ?>">
-              <?php the_post_thumbnail('thumbnail'); ?>
+              <?php the_post_thumbnail('custom_size'); ?>
               <?php the_title(); ?>
             </a>
           </li>

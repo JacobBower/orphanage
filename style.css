@@ -288,6 +288,10 @@ a.button-small {
   width: 75%;
   padding-left: 2em;
 }
+.gallery-content ul {
+  margin-left: -.5em;
+  margin-right: -.5em;
+}
 .gallery-content li {
   width: 50%;
   float: left;
@@ -378,7 +382,7 @@ footer {
   clear: both;
 }
 
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 768px) {
 
 /* - - - - GRID - - - - */
 .wrapper {
@@ -482,8 +486,14 @@ border-bottom: none;
 }
 
 /* - - - - CONTENT TABLET - - - - */
+.content-section {
+  padding-right: 1em;
+}
 .content {
 	  padding-top:102px;
+}
+.mission-statement {
+  padding-right: 1em;
 }
 .current-projects {
   padding-left: 1em;
