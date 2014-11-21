@@ -1,15 +1,21 @@
-<?php get_header(); ?>
+<?php
+/*
+* Orphanage Theme
+* Main template file.
+*
+* This is the most generic template file in a WordPress theme
+* and one of the two required files for a theme (the other being style.css).
+* It is used to display a page when nothing more specific matches a query.
+*/
+
+get_header(); ?>
 
 	<div class="content row">
-    
-    <h1>Recent Posts</h1>
-    <br />
-    
-        <div class="sidebar column-4 no-pad-right">
-                <?php get_sidebar('secondary'); ?>
-        </div>
-        
-	<!-- START CONTENT -->	
+	<h1>Blog</h1>
+
+	<section class="content-section">
+	<!-- START CONTENT -->
+
 		<?php if (have_posts()) : ?>
 		    <?php while (have_posts()) : the_post(); ?>
             
@@ -25,26 +31,7 @@
 
 		<?php endif; ?>
 		<!-- END CONTENT -->
+		</section>
 	</div> <!-- CONTENT -->
 
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</div> <!-- CONTENT -->
