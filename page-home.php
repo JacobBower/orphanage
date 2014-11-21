@@ -67,23 +67,23 @@ get_header(); ?>
 			<section class="content-section border-top">
 				<div class="row">
 					<div class="blog-section column-8 no-pad-left">
-						<h2 class="section-headline">Blog</h2>
-						<section class="blog-post row">
-							<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""  class="column-4"/>
-							<div class="blog-description column-8">
-								<h4 class="blog-post-title">Title</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-								<a href="#" class="button-small">Button</a>
-							</div> <!-- BLOG DESCRIPTION -->
-						</section>
-						<section class="blog-post row">
-							<img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt="" class="column-4"/>
-							<div class="blog-description column-8">
-								<h4 class="blog-post-title">Title</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-								<a href="#" class="button-small">Button</a>
-							</div> <!-- BLOG DESCRIPTION -->
-						</section>
+						<h2 class="section-headline">Recent Posts</h2>
+
+						<ul>
+							<?php $the_query = new WP_Query('showposts=2');
+							while ( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
+								<li>
+									<div class="blog-description column-12 no-pad-left">
+										<h4 class="blog-post-title"><?php the_title(); ?></h4>
+										<?php the_excerpt(); ?>
+										<a href="<?php the_permalink() ?>" class="button-small">More</a>
+									</div>
+								</li>
+							<?php endwhile; ?>
+						</ul>
+
+						<div class="clearfix"></div>
+
 						<a href="#" class="button-large">More</a>
 					</div> <!-- BLOG SECTION -->
 					<div class=" sidebar column-4 no-pad-right">

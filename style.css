@@ -527,11 +527,20 @@ border-bottom: none;
 .blog-section h2 {
   margin-bottom: 5px;
 }
-.blog-section img {
+.blog-section ul {
+  padding-top: 1em;
+}
+.blog-section ul li {
+  padding-bottom: 1em;
+}
+.blog-section .button-small {
+  float: right;
+}
+/*.blog-section img {
   height: auto;
   float: left;
   padding-left: 0;
-}
+}*/
 .button-large {
   display: block;
   width: 150px;
