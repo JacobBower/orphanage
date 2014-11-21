@@ -312,6 +312,12 @@ a.button-small:focus {
   height: 100%;
 }
 
+
+/* making facebook comments responsive */
+
+#fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
+  width: 100% !important;
+}
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: none;
