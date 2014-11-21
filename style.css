@@ -62,7 +62,6 @@ img {
 /* - - - - GLOBAL - - - - */
 body {
   font-family: 'Helvetica', 'Arial', 'sans-serif';
-  min-width:390px;
 }
 header {
   display:block;
