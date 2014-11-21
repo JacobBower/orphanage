@@ -21,26 +21,41 @@ get_header(); ?>
         </section>
 		<section class="content-section border-bottom column-8 no-pad-left">
       		<h3>Our Leadership</h3>
-            	<section class="section-description row">
-            		<!-- <div class="placeholder"><a href="#"></a></div> -->
-                    <img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""  class="column-4 no-pad-left no-pad-right"/>
-                        <div class="leadership-description column-8 no-pad-right">
-                        <h4>Title</h4>
-                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" class="button-small">Button</a>
-                        </div>
-                </section><!--ABOUT-LEADERSHIP-POST-->
-                <section class="section-description row">
-            		<!-- <div class="placeholder"><a href="#"></a></div> -->
-                    <img src="<?php bloginfo('template_directory'); ?>/img/placeholder-square.jpg" alt=""  class="column-4 no-pad-left no-pad-right"/>
-                        <div class="leadership-description column-8 no-pad-right">
-                        <h4>Title</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" class="button-small">Button</a>
-                        </div>
-                        <div class="clearfix"></div>
-                        <a href="" class="button-large">More</a>
-                </section><!--ABOUT-LEADERSHIP-POST-->
+            <div class="section-description row">
+
+                <?php
+                    $args = array(
+                        'post_type' => 'leadership',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order' => 'ASC'
+                    );
+                    $loop = new WP_Query( $args );
+                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <div class="image-wrapper column-4 no-pad-left">
+                        <?php the_post_thumbnail('custom_size'); ?>
+                    </div>
+                    <div class="leadership-description column-8 no-pad-right">
+                        <h4><?php the_title(); ?></h4>
+                        <?php the_content(); ?>
+                    </div>
+
+                <?php endwhile; ?>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            	
                 	
     	</section><!--ABOUT-LEADERSHIP-->
 		
