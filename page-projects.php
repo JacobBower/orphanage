@@ -42,7 +42,6 @@ get_header(); ?>
         </ul>
 		
        </section>
-       <div class="clearfix"></div>
        <!--GALLERY-->
        
        <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
