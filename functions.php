@@ -85,7 +85,6 @@ function post_type_leadership() {
 	// register post type
     $postTypeArgs = array(
 		'label'  => 'Leadership',
-		'add_new' => _x('Add New', 'author'),
 		'public' => true,
 		'rewrite' => array("slug" => "leadership"),
 		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', ),
@@ -94,6 +93,19 @@ function post_type_leadership() {
     
 }
 add_action( 'init', 'post_type_leadership' );
+
+function post_type_fundraising() {
+	// register post type
+    $postTypeArgs = array(
+		'label'  => 'Fundraising',
+		'public' => true,
+		'rewrite' => array("slug" => "fundraising"),
+		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', ),
+    );
+    register_post_type( 'fundraising', $postTypeArgs );
+    
+}
+add_action( 'init', 'post_type_fundraising' );
 
 add_image_size( 'custom_size', 300, 300, array( 'center', 'center' ) );
 

@@ -32,7 +32,7 @@ get_header(); ?>
                     <div class="image-wrapper column-4 no-pad-left">
                         <?php the_post_thumbnail('custom_size'); ?>
                     </div>
-                    <div class="leadership-description column-8 no-pad-right">
+                    <div class="page-post-description column-8 no-pad-right">
                         <h4><?php the_title(); ?></h4>
                         <?php the_content(); ?>
                     </div>
