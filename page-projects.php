@@ -4,7 +4,7 @@ Template Name: Projects
 */
 get_header(); ?>
 	
-	<div class="content row">
+	<div class="content projects row">
     
  	   <h1><?php the_title(); ?></h1>
        
@@ -35,7 +35,7 @@ get_header(); ?>
           <li>
             <a href="<?php the_permalink(); ?>">
               <?php the_post_thumbnail('custom_size'); ?>
-              <?php the_title(); ?>
+              <p><?php the_title(); ?></p>
             </a>
           </li>
           <?php endwhile; ?>
@@ -68,7 +68,7 @@ get_header(); ?>
           <li>
             <a href="<?php the_permalink(); ?>">
               <?php the_post_thumbnail('custom_size'); ?>
-              <?php the_title(); ?>
+              <p><?php the_title(); ?></p>
             </a>
           </li>
           <?php endwhile; ?>

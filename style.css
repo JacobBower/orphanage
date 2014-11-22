@@ -214,6 +214,7 @@ img.logo {
   height: auto;
   margin: 5px 0 20px 0;
 }
+
 a.button-small {
   display: block;
   clear: both;
@@ -286,6 +287,19 @@ a.button-small:focus {
 .gallery-content li img {
   width: 100%;
   padding-bottom: .5em;
+}
+.projects .gallery-content li a p {
+  background: #434343;
+  color: #FFF;
+  width: 100%;
+  padding: 5px 10px;
+}
+.projects .gallery-content li a p:hover,
+.projects .gallery-content li a p:focus {
+  color: #07b0ed;
+}
+.projects .gallery-content li img {
+  padding-bottom: 0;
 }
 .content-headline {
   height: 3em;
@@ -622,7 +636,7 @@ border-bottom: none;
   padding-right: 1em;
 }
 .gallery-content li {
-  width: 25%;
+  width: 33.333333%;
 }
 
 /* - - - - WIDGETS - - - - */
