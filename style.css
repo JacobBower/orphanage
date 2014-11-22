@@ -73,7 +73,6 @@ header {
   -moz-box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.75);
   z-index:10;
-  position: fixed;
 
 }
 h1 {
@@ -384,7 +383,6 @@ margin-top: 20px;
 footer {
   background: #434343;
   width: 100%;
-  position:fixed;
   bottom:0;
   z-index:10;
 }
@@ -508,6 +506,10 @@ footer {
 }
 
 /* - - - - HEADER TABLET - - - - */
+header {
+  position: fixed;
+
+}
 .header-right {
   padding-top: 0;
   padding-bottom:0;
@@ -539,7 +541,7 @@ footer {
   height: 50px;
   line-height: 40px;
   text-align: center;
-  font-weight:bold;
+  font-weight:
   color:white;
 }
 .share-buttons ul li a:hover,
