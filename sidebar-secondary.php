@@ -4,7 +4,6 @@
 	<?php else : ?>
     
     <?php/* default sidebar when no widgets are active */?>
-        <h3>Primary Sidebar</h3>
         <!-- Begin Categories -->
  		<h3><?php _e('Search'); ?></h3>
 			<?php get_search_form(); /* default Wordpress search form */?>        
