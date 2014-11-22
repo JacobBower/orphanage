@@ -75,7 +75,7 @@ get_header(); ?>
 								<li>
 									<div class="blog-description column-12 no-pad-left">
 										<h4 class="blog-post-title"><?php the_title(); ?></h4>
-										<?php the_excerpt(); ?>
+										<p><?php echo excerpt(55); ?></p>
 										<a href="<?php the_permalink() ?>" class="button-small">More</a>
 									</div>
 								</li>

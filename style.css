@@ -645,6 +645,16 @@ border-bottom: none;
 .sidebar ul {
   padding: .5em 0 1em 0;
 }
+.sidebar ul li {
+  padding-top: 2px;
+}
+.sidebar ul li a {
+  color: #000;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a:focus {
+  color: #ff6963;
+}
 
 /* - - - - FOOTER TABLET - - - - */
 footer {

@@ -107,5 +107,18 @@ function post_type_fundraising() {
 }
 add_action( 'init', 'post_type_fundraising' );
 
+// Custom thumbnail size
 add_image_size( 'custom_size', 300, 300, array( 'center', 'center' ) );
 
+// Custom excerpt lengths
+function excerpt($limit) {
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    if (count($excerpt)>=$limit) {
+        array_pop($excerpt);
+        $excerpt = implode(" ",$excerpt).'...';
+      } else {
+        $excerpt = implode(" ",$excerpt);
+      } 
+    $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+    return $excerpt;
+    }

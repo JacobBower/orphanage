@@ -23,7 +23,7 @@ get_header(); ?>
                     'post_type' => 'fundraising',
                     'posts_per_page' => -1,
                     'orderby' => 'date',
-                    'order' => 'ASC');
+                    'order' => 'DESC');
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <li class="row">
@@ -33,7 +33,7 @@ get_header(); ?>
                             </div>
                             <div class="column-8 no-pad-right">
                                 <?php the_title(); ?>
-                                <?php the_excerpt(); ?>
+                                <p><?php echo excerpt(35); ?></p>
                                 <a href="<?php the_permalink(); ?>" class="button-small">More</a>
                             </div>
                         </a>
