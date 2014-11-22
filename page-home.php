@@ -53,6 +53,7 @@ get_header(); ?>
 
 							<div class="section-<?php if($i == 1) { echo 'left'; } else { echo 'right'; }; ?> column-6 no-pad-left no-pad-right">
 								<?php the_post_thumbnail('custom_size'); ?>
+								<p><?php the_title(); ?></p>
 								<a href="<?php the_permalink(); ?>" class="button-small">Button</a>
 							</div>
 

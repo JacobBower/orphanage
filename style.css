@@ -216,7 +216,7 @@ img.logo {
 .current-projects img {
   width: 100%;
   height: auto;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 0 0;
 }
 
 /*Small and Large Button Styles*/
@@ -323,11 +323,20 @@ padding-left: 0;
   width: 100%;
   padding-bottom: .5em;
 }
+
+/*Image Caption Boxes for Home and Projects*/
 .projects .gallery-content li a p {
   background: #434343;
   color: #FFF;
   width: 100%;
   padding: 5px 10px;
+}
+.content .current-projects p {
+  background: #434343;
+  color: #FFF;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom:10px;
 }
 .projects .gallery-content li a p:hover,
 .projects .gallery-content li a p:focus {
