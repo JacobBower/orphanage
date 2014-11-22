@@ -323,6 +323,12 @@ a.button-small:focus {
   padding-bottom: 0;
 }
 
+/*Social Share Bar*/
+
+.ssb-share {
+margin-top: 20px;
+}
+
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: none;
