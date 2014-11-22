@@ -9,8 +9,13 @@ body, body * {
 a img {
   border: none;
 }
-a {
+a:link, a:visited {
   text-decoration: none;
+  color:#3567b2;
+}
+a:focus, a:hover {
+  color: #fbaa1f;
+  text-decoration:underline;
 }
 ul, ol {
   list-style-type: none;
@@ -153,12 +158,12 @@ img.logo {
 }
 .header-nav ul li a:hover{
   text-decoration:underline;
-  color:#07b0ed;
+  color:#fbaa1f;
   display: block;
 }
 .header-nav ul li.current_page_item a{
   text-decoration:underline;
-  color:#07b0ed;
+  color:#fbaa1f;
 }
 .responsive-menu-wrapper {
   float:right;
@@ -232,7 +237,7 @@ a.button-small {
 }
 a.button-small:hover,
 a.button-small:focus {
-  background-color: #434343;
+  background-color: #fbaa1f;
 }
 .blog-section .button-small {
   float: right;
@@ -242,7 +247,7 @@ height: auto;
 float: left;
 padding-left: 0;
 }*/
-.button-large {
+.button-large:link, .button-large:visited {
   display: block;
   width: 150px;
   height: 40px;
@@ -260,7 +265,7 @@ padding-left: 0;
 }
 .button-large:hover,
 .button-large:focus {
-  background-color: #434343;
+  background-color: #fbaa1f;
 }
 .blog-post .button-small {
   float: left;
@@ -326,7 +331,7 @@ padding-left: 0;
 }
 .projects .gallery-content li a p:hover,
 .projects .gallery-content li a p:focus {
-  color: #07b0ed;
+  color: #fbaa1f;
 }
 .projects .gallery-content li img {
   padding-bottom: 0;
@@ -535,17 +540,16 @@ header {
   border-radius: 0px 0px 10px 10px;
   margin: 0 .5em 0 .5em;
 }
-.share-buttons ul li a {
+.share-buttons ul li a:link, .share-buttons ul li a:visited {
   display: block;
   height: 50px;
   line-height: 40px;
   text-align: center;
-  font-weight:
   color:white;
+  font-weight:bold;
 }
 .share-buttons ul li a:hover,
 .share-buttons ul li a:focus {
-  text-decoration: underline;
 }
 .header-nav {
   display: block;
@@ -666,12 +670,12 @@ border-bottom: none;
 .sidebar ul li {
   padding-top: 2px;
 }
-.sidebar ul li a {
-  color: #000;
+.sidebar ul li a:link, .sidebar ul li a:visited {
+  color: #3567b2;
 }
 .sidebar ul li a:hover,
 .sidebar ul li a:focus {
-  color: #ff6963;
+  color: #fbaa1f;
 }
 
 /* - - - - FOOTER TABLET - - - - */
@@ -704,7 +708,7 @@ footer {
 }
 .footer-nav ul li a:hover {
   text-decoration:none;
-  color:#07b0ed;
+  color:#3567b2;
 }
 .footer-left .share-button-list {
   display: none;
