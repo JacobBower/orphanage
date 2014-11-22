@@ -184,7 +184,7 @@ img.logo {
   width: 100%;
   margin: 0 auto;
   z-index:10;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 .content-section {
   padding: 1em 0;
@@ -266,7 +266,6 @@ padding-left: 0;
   float: left;
 }
 /* - - -  PAGE CONTENT - - - - */
-
 .single-share li{
   display: inline-block;
   text-align: center;
