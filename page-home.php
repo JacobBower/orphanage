@@ -7,7 +7,7 @@ get_header(); ?>
 
 <div class="content">
 
-			<section class="content-section">
+			<section class="content-section-full">
 				<div class="row">
 
 					<div id="main-content-slider" class="owl-carousel owl-theme column-12 no-pad-left no-pad-right">
@@ -17,7 +17,7 @@ get_header(); ?>
 
 				</div>
 			</section>
-			<section class="content-section">
+			<section class="content-section-full">
 				<div class="row">
 					<div class="mission-statement column-6 no-pad-left no-pad-right">
 						<h2 class="section-headline">Mission Statement</h2>
@@ -64,7 +64,7 @@ get_header(); ?>
 			</section>
 
 
-			<section class="content-section border-top">
+			<section class="content-section-full border-top">
 				<div class="row">
 					<div class="blog-section column-8 no-pad-left">
 						<h2 class="section-headline">Recent Posts</h2>

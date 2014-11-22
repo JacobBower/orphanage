@@ -317,6 +317,11 @@ a.button-small:focus {
 #fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
   width: 100% !important;
 }
+.postmetadata {
+  font-size: .85em;
+  padding-bottom: 0;
+}
+
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: none;
@@ -500,6 +505,9 @@ border-bottom: none;
 /* - - - - CONTENT TABLET - - - - */
 .content-section {
   padding: 1em 1em 1em 0;
+}
+.content-section-full {
+  padding: 1em 0;
 }
 .content {
 	  padding-top:102px;
