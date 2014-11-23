@@ -28,9 +28,24 @@ get_header(); ?>
 				            <span class="date">Posted on <?php the_time('F jS, Y') ?></span> &bull; 
 				            <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
 				        </p>
-				        <?php the_content(); ?> 
+                        
+				        <?php the_content('More &raquo;'); ?> 
+                        
+                        
+                          
 			        </div>
 			    <?php endwhile; ?>
+                
+                   <nav class="post-nav">
+                       <div class="alignleft">
+                            <?php previous_post_link( '%link', '&#x276e; Previous', TRUE ); ?>
+                       </div> 
+                       <div class="alignright">
+                            <?php next_post_link( '%link', 'Next &#x276f;', TRUE ); ?>
+                       </div>
+                   </nav>
+                    
+        
 			<?php endif; ?>
 		</section>
 	</div> <!-- CONTENT -->
