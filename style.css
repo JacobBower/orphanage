@@ -39,7 +39,7 @@ img {
 .wrapper {
     max-width: 940px;
     width: 100%;
-    padding: 0 1em 80px 1em;
+    padding: 0 1em 0 1em;
     margin: 0 auto;
 }
 .wrapper:after,
