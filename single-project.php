@@ -17,6 +17,7 @@
             <span class="cat"><?php the_category(', ') ?></span>
             <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
         </p>
+<<<<<<< HEAD
         
                 <?php the_post_thumbnail(); ?>
                 <?php the_content('More &raquo;'); ?>
@@ -32,10 +33,23 @@
                 <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
                 <?php comments_template(); ?>
                 <?php endwhile; else: ?>
+=======
+            <?php the_post_thumbnail(); ?>
+            <?php the_content('More &raquo;'); ?>
+            <nav class="post-nav">
+                <div class="alignleft">
+                    <?php previous_post_link(); ?>
+                </div>
+                <div class="alignright">
+                    <?php next_post_link(); ?>
+                </div>
+            </nav>
+            <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
+            <?php endwhile; else: ?>
+>>>>>>> FETCH_HEAD
                 <p>Sorry, no posts matched your criteria.</p>
-                <?php endif; ?>
-            <!-- END CONTENT -->
-
+            <?php endif; ?>
+        <!-- END CONTENT -->
         </div>
     </div>
 
