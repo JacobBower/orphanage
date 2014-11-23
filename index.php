@@ -27,9 +27,9 @@ get_header(); ?>
 				        <p class="postmetadata">
 				            <span class="date">Posted on <?php the_time('F jS, Y') ?></span> &bull; 
 				            <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
+                            <span class="tag"><?php wp_tag_cloud(); ?></span>
+                            <p><?php echo excerpt(55); ?></p>
 				        </p>
-                        
-				        <?php the_content('More &raquo;'); ?> 
                         
 			        </div>
 			    <?php endwhile; ?>

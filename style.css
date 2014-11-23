@@ -354,11 +354,19 @@ a.button-small:focus {
 /* index and single pages */
 .alignleft {
 	float: left;
-	margin: 0 10px 10px 0px ; 
+	margin: 10px; 
 }
 .alignright {
 	float: right;
-	margin: 0 0px 10px 10px; 
+	margin: 10px; 
+}
+.tag a {
+	background-color:#999;
+	color:white;
+	margin:5px;
+	padding: 2px 5px;
+	font-style:normal;
+	border-radius: 2px;
 }
 /* making facebook comments responsive */
 #fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {

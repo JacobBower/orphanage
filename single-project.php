@@ -13,12 +13,11 @@
 
         <div class="post-wrapper column-8 no-pad-left">
         <p class="postmetadata">
-            <span class="date">Posted on <?php the_time('F jS, Y') ?></span> in
+            <span class="date">Posted on <?php the_time('F jS, Y') ?></span> &bull;
             <span class="cat"><?php the_category(', ') ?></span>
             <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
         </p>
-            <!-- <h5><em>Posted October 23, 2014 by Weird Al under <a href="#">Tag</a> <a href="#">Tag</a> <a href="#">Tag</a>
-            </em></h5> -->
+        
                 <?php the_post_thumbnail(); ?>
                 <?php the_content('More &raquo;'); ?>
                 <nav class="post-nav">
