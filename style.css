@@ -1,5 +1,8 @@
-/*
-RESPONSIVE */
+/*  
+Theme Name: 200 Orphanages
+Description: Custom WordPress theme for 200 Orphanages Worldwide 
+Authors: Anthony Keller, Jacob Bower, Eric Willis, Laura Anderson
+*/
 
 /* - - - - RESETS - - - - */
 body, body * {
@@ -9,18 +12,12 @@ body, body * {
 a img {
   border: none;
 }
-a:link, a:visited {
+a {
   text-decoration: none;
-  color:#3567b2;
-}
-a:focus, a:hover {
-  color: #fbaa1f;
-  text-decoration:underline;
 }
 ul, ol {
   list-style-type: none;
 }
-
 /* - - - - GRID - - - - */
 *,
 *:after,
@@ -78,6 +75,7 @@ header {
   -moz-box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.75);
   z-index:10;
+  position: fixed;
 }
 h1 {
   font-size: 2em;
@@ -91,13 +89,13 @@ p {
   font-family:Arial, Helvetica, sans-serif;
 }
 .yellow {
-  background-color:#fbaa1f;
+  background-color:#ffff00;
 }
 .blue {
-  background-color:#3567b2;
+  background-color:#07b0ed;
 }
 .red {
-  background-color:#c5483c;
+  background-color:#ff6963;
 }
 /* - - - - HEADER - - - - */
 .header-wrapper {
@@ -157,12 +155,12 @@ img.logo {
 }
 .header-nav ul li a:hover{
   text-decoration:underline;
-  color:#fbaa1f;
+  color:#07b0ed;
   display: block;
 }
 .header-nav ul li.current_page_item a{
   text-decoration:underline;
-  color:#fbaa1f;
+  color:#07b0ed;
 }
 .responsive-menu-wrapper {
   float:right;
@@ -188,7 +186,7 @@ img.logo {
   width: 100%;
   margin: 0 auto;
   z-index:10;
-  padding-top: 20px;
+  padding-top: 100px;
 }
 .content-section {
   padding: 1em 0;
@@ -215,11 +213,8 @@ img.logo {
 .current-projects img {
   width: 100%;
   height: auto;
-  margin: 5px 0 0 0;
+  margin: 5px 0 20px 0;
 }
-
-/*Small and Large Button Styles*/
-
 a.button-small {
   display: block;
   clear: both;
@@ -228,7 +223,7 @@ a.button-small {
   text-align: center;
   line-height: 30px;
   color: #FFF;
-  background-color:#3567b2;
+  background-color:#07b0ed;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
@@ -236,38 +231,7 @@ a.button-small {
 }
 a.button-small:hover,
 a.button-small:focus {
-  background-color: #fbaa1f;
-}
-.blog-section .button-small {
-  float: right;
-}
-/*.blog-section img {
-height: auto;
-float: left;
-padding-left: 0;
-}*/
-.button-large:link, .button-large:visited {
-  display: block;
-  width: 150px;
-  height: 40px;
-  margin-top: 1em;
-  text-align: center;
-  line-height: 40px;
-  color: #FFF;
-  background-color:#c5483c;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-}
-.button-large:hover,
-.button-large:focus {
-  background-color: #fbaa1f;
-}
-.blog-post .button-small {
-  float: left;
+  background-color: #434343;
 }
 /* - - -  PAGE CONTENT - - - - */
 .single-share li{
@@ -320,16 +284,9 @@ padding-left: 0;
   width: 100%;
   padding: 5px 10px;
 }
-.content .current-projects p {
-  background: #434343;
-  color: #FFF;
-  width: 100%;
-  padding: 5px 10px;
-  margin-bottom:10px;
-}
 .projects .gallery-content li a p:hover,
 .projects .gallery-content li a p:focus {
-  color: #fbaa1f;
+  color: #07b0ed;
 }
 .projects .gallery-content li img {
   padding-bottom: 0;
@@ -342,9 +299,7 @@ padding-left: 0;
   padding-left: 1em;
   border-radius:2px;
 }
-
-/*Responsive wrapper for embeded videos*/
-
+/* Responsive wrapper for embeded videos */
 .video_wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -358,19 +313,16 @@ padding-left: 0;
   width: 100%;
   height: 100%;
 }
-/*index and single pages*/
-
+/* index and single pages */
 .alignleft {
 	float: left;
 	margin: 0 10px 10px 0px ; 
 }
-	
 .alignright {
 	float: right;
 	margin: 0 0px 10px 10px; 
 }
 /* making facebook comments responsive */
-
 #fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
   width: 100% !important;
 }
@@ -379,22 +331,19 @@ padding-left: 0;
   padding-bottom: 0;
   font-style:italic;
 }
-
-/*Social Share Bar*/
-
+/* Social Share Bar */
 .ssb-share {
 margin-top: 20px;
 }
-
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: none;
 }
-
 /* - - - - FOOTER - - - - */
 footer {
   background: #434343;
   width: 100%;
+  position:fixed;
   bottom:0;
   z-index:10;
 }
@@ -458,7 +407,7 @@ footer {
 .clearfix {
   clear: both;
 }
-/*Resize Logo On Small screen*/
+/* Resize Logo On Small screen */
 @media screen and (min-width: 600px) {
   .header-left {
     width:70%;
@@ -516,12 +465,7 @@ footer {
 .column-12 {
     width: 100%;
 }
-
 /* - - - - HEADER TABLET - - - - */
-header {
-  position: fixed;
-
-}
 .header-right {
   padding-top: 0;
   padding-bottom:0;
@@ -548,16 +492,16 @@ header {
   border-radius: 0px 0px 10px 10px;
   margin: 0 .5em 0 .5em;
 }
-.share-buttons ul li a:link, .share-buttons ul li a:visited {
+.share-buttons ul li a {
   display: block;
   height: 50px;
   line-height: 40px;
   text-align: center;
-  color:white;
-  font-weight:bold;
+  color:#000;
 }
 .share-buttons ul li a:hover,
 .share-buttons ul li a:focus {
+  text-decoration: underline;
 }
 .header-nav {
   display: block;
@@ -621,16 +565,44 @@ border-bottom: none;
 .blog-section ul li {
   padding-bottom: 1em;
 }
-
+.blog-section .button-small {
+  float: right;
+}
+/*.blog-section img {
+  height: auto;
+  float: left;
+  padding-left: 0;
+}*/
+.button-large {
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin-top: 1em;
+  text-align: center;
+  line-height: 40px;
+  color: #FFF;
+  background-color:#ff6963;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+}
+.button-large:hover,
+.button-large:focus {
+  background-color: #434343;
+}
+.blog-post .button-small {
+  float: left;
+}
 .sidebar {
   padding-right: 0;
 }
 .social-mobile {
   display: none;
 }
-
 /* - - - - PAGE CONTENT - - - - */
-
 .single-share li{
   display: inline-block;
   text-align: center;
@@ -654,13 +626,11 @@ border-bottom: none;
 .gallery-content li {
   width: 33.333333%;
 }
-
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: block;
   float: right;
 }
-
 .sidebar h3 {
 	height:3em;
 	line-height:3em;
@@ -678,14 +648,13 @@ border-bottom: none;
 .sidebar ul li {
   padding-top: 2px;
 }
-.sidebar ul li a:link, .sidebar ul li a:visited {
-  color: #3567b2;
+.sidebar ul li a {
+  color: #000;
 }
 .sidebar ul li a:hover,
 .sidebar ul li a:focus {
-  color: #fbaa1f;
+  color: #ff6963;
 }
-
 /* - - - - FOOTER TABLET - - - - */
 footer {
 	position:relative;
@@ -716,7 +685,7 @@ footer {
 }
 .footer-nav ul li a:hover {
   text-decoration:none;
-  color:#3567b2;
+  color:#07b0ed;
 }
 .footer-left .share-button-list {
   display: none;
