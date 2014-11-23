@@ -39,7 +39,6 @@ get_header(); ?>
 					<div class="alignleft"><?php next_posts_link( '&laquo; Previous Posts', '' ); ?></div>
 				</div>
                     
-        
 			<?php endif; ?>
 		</section>
 	</div> <!-- CONTENT -->
