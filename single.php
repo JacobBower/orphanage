@@ -18,7 +18,7 @@
                 <span class="tag"><?php wp_tag_cloud(); ?></span>
             </p>
         
-                <?php the_content('More &raquo;'); ?>
+                <?php the_content(); ?>
                        <nav class="post-nav">
                            <div class="alignleft">
                             <?php previous_post_link( '%link', '&#x276e; Previous', TRUE ); ?>

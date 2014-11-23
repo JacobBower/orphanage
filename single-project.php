@@ -30,6 +30,8 @@
                     </div>
                 </nav>
 
+                <div class="clearfix"></div>
+
                 <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
                 <?php comments_template(); ?>
                 <?php endwhile; else: ?>
