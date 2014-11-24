@@ -19,7 +19,7 @@
         </p>
         
                 <?php the_post_thumbnail(); ?>
-                <?php the_content('More &raquo;'); ?>
+                <?php the_content(); ?>
                     <nav class="post-nav">
                         <div class="alignleft">
                             <?php previous_post_link(); ?>
@@ -28,20 +28,9 @@
                             <?php next_post_link(); ?>
                         </div>
                     </nav>
-
-                <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
-                <?php comments_template(); ?>
-                <?php the_post_thumbnail(); ?>
-					<?php the_content('More &raquo;'); ?>
-                    <nav class="post-nav">
-                        <div class="alignleft">
-                            <?php previous_post_link(); ?>
-                        </div>
-                        <div class="alignright">
-                            <?php next_post_link(); ?>
-                        </div>
-                    </nav>
-				<?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
+                <div class="edit-post">
+    				<?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
+                </div>
                 <?php endwhile; else: ?>
 
               
