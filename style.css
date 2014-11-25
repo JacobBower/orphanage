@@ -360,14 +360,14 @@ a.button-small:focus {
 	float: right;
 	margin: 1em 0 0 0; 
 }
-.tag a {
-	background-color:#999;
-	color:white;
-	margin:5px;
-	padding: 2px 5px;
-	font-style:normal;
-	border-radius: 2px;
+.post-wrapper {
+	padding-bottom: 1em;
 }
+.post-wrapper img {
+	margin: auto;
+	padding: .5em 1em;
+}
+
 /* making facebook comments responsive */
 #fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
   width: 100% !important;
