@@ -29,7 +29,6 @@
                 </nav>
 
                 <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
-                <?php comments_template(); ?>
                 <?php endwhile; else: ?>
                 <p>Sorry, no posts matched your criteria.</p>
                 <?php endif; ?>
