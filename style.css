@@ -364,8 +364,14 @@ a.button-small:focus {
 	padding-bottom: 1em;
 }
 .post-wrapper img {
-	margin: auto;
+	margin: 0 auto;
 	padding: .5em 1em;
+}
+.post-wrapper .wp-caption-text {
+	margin: 0 auto;
+	padding: 0 0 0 1.25em;
+	font-style:italic;
+	font-size: .75em;
 }
 
 /* making facebook comments responsive */
