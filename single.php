@@ -15,7 +15,6 @@
             <p class="postmetadata">
                 <span class="date">Posted on <?php the_time('F jS, Y') ?></span> &bull; 
                 <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
-                <span class="tag"><?php wp_tag_cloud(); ?></span>
             </p>
         
                 <?php the_content(); ?>
