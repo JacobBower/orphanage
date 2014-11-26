@@ -31,12 +31,12 @@ get_header(); ?>
                             <div class="image-wrapper column-4 no-pad-left">
                                 <?php the_post_thumbnail('custom_size'); ?>
                             </div>
-                            <div class="column-8 no-pad-right">
-                                <?php the_title(); ?>
-                                <p><?php echo excerpt(35); ?></p>
-                                <a href="<?php the_permalink(); ?>" class="button-small">More</a>
-                            </div>
                         </a>
+                        <div class="column-8 no-pad-right">
+                            <?php the_title(); ?>
+                            <p><?php echo excerpt(35); ?></p>
+                            <a href="<?php the_permalink(); ?>" class="button-small">More</a>
+                        </div>
                     </li>
                 <?php endwhile; ?>
             </ul>    
