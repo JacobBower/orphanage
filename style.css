@@ -132,9 +132,6 @@ img.logo {
   float: right;
   width: 100%;
 }
-.header-menu {
-  display: none;
-}
 .share-buttons {
   display: none;
 }
@@ -149,21 +146,17 @@ img.logo {
   padding: 15px;
   border-top: 1px solid #999;
   margin: 0;
-}
-.header-nav li:last-child {
-  border-bottom: 1px solid #999;
+  text-align: center;
 }
 .header-nav ul li a {
   display: block;
   color: #fff;
 }
 .header-nav ul li a:hover{
-  text-decoration:underline;
   color: #fbaa1f;
   display: block;
 }
 .header-nav ul li.current_page_item a{
-  text-decoration:underline;
   color: #fbaa1f;
 }
 .responsive-menu-wrapper {
@@ -587,16 +580,16 @@ header {
 }
 .header-nav {
   display: block;
-
+  padding-left: .75em;
 }
 .header-nav ul {
   display: table;
   width: 100%;
-  padding-left: .75em;
 }
 .header-nav ul li {
   display: table-cell;
   border-top: none;
+  text-align: left;
 }
 .header-left {
 	padding: 0;
