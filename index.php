@@ -28,6 +28,7 @@ get_header(); ?>
 				            <span class="date">Posted on <?php the_time('F jS, Y') ?></span> &bull; 
 				            <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
                             <p><?php echo excerpt(55); ?></p>
+                            <a href="<?php the_permalink(); ?>" class="button-small">View Post</a>
 				        </p>
                         
 			        </div>
