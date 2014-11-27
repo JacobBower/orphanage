@@ -10,7 +10,7 @@
 		$(window).load(function() { // enable function upon window load
 
 			$(".responsive-menu").click(function() { // when toggle is clicked...
-				$("nav").toggleClass("hidden"); // ... open or close the navigation
+				$("nav").slideToggle(400); // ... open or close the navigation
 			});
 
 		});
