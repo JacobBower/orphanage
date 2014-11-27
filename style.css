@@ -373,6 +373,9 @@ a.button-small:focus {
 #fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
   width: 100% !important;
 }
+.fb-comments span {
+  margin-top: 1em;
+}
 .postmetadata {
   font-size: .75em;
   padding-bottom: 10px;
