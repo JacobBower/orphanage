@@ -5,7 +5,7 @@
 		<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
 		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.2.1.1.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		$(window).load(function() { // enable function upon window load
 

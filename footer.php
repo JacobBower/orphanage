@@ -1,6 +1,4 @@
 
-
-
 </div> <!--WRAPPER-->
 	
 	<footer>
@@ -52,7 +50,6 @@
 	</footer>
 <?php wp_footer(); ?>
 
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script>
 <script>
 	$(document).ready(function(){
