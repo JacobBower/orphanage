@@ -394,6 +394,7 @@ a.button-small:focus {
 .ssb-share {
 display: block;
 clear: both;
+margin-bottom: 2em;
 }
 /* - - - - WIDGETS - - - - */
 .sidebar {
