@@ -1,5 +1,10 @@
 
-<section class="social-mobile">
+
+
+</div> <!--WRAPPER-->
+	
+	<footer>
+    <section class="social-mobile">
 				<div class="row">
 					<ul class="social-icons">
 						<li class="column-3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/linkedin@2.png" alt="linkedin icon" /></a></li>
@@ -9,10 +14,6 @@
 					</ul>
 				</div>
                 </section>
-
-</div> <!--WRAPPER-->
-	
-	<footer>
     
 		<div class="footer-wrapper row">
 			

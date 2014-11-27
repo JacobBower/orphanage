@@ -41,7 +41,7 @@ img {
 .wrapper {
     max-width: 940px;
     width: 100%;
-    padding: 0 1em 80px 1em;
+    padding: 0 1em 20px 1em;
     margin: 0 auto;
 }
 .wrapper:after,
@@ -411,6 +411,14 @@ footer {
   margin: 0 auto;
   text-align:center;
 }
+.footer-wrapper ul li a:link, .share-buttons ul li a:visited {
+  font-weight: 700;
+  color:#FFF;
+}
+.footer-wrapper ul li a:hover,
+.footer-wrapper ul li a:focus {
+  text-decoration: underline;
+}
 .footer-left {
   padding: 0;
 }
@@ -431,9 +439,17 @@ footer {
 .social-mobile .social-icons li a img {
   max-width: 90%;
   height: auto;
-  -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -webkit-box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
+  box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
+}
+.social-icons li{
+	padding:1em 1em 0 1em;
+}
+.social-mobile .social-icons {
+	padding: 1em 0 0 0;
 }
 .share-button-list .column-4 {
   width: 33.3333333%;
@@ -444,7 +460,8 @@ footer {
 }
 .social-mobile .share-button-list li a {
   margin: 0 auto;
-  color:black;
+  font-weight: 700;
+  color:#FFF;
   font-size: 1.4em;
   border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
