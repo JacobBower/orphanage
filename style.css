@@ -478,6 +478,7 @@ footer {
     max-width: 60px;
     height: auto;
   }
+  
 }
 @media screen and (min-width: 768px) {
 
@@ -699,6 +700,11 @@ border-bottom: none;
   float: left;
   width: 75%;
   padding-left: 2em;
+}
+/* - - - - Index and single - - - - */
+
+.post-wrapper img {
+	max-width:500px;
 }
 
 /* - - - - FOOTER TABLET - - - - */
