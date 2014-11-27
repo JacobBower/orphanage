@@ -1,6 +1,6 @@
-/*
+/*  
 Theme Name: 200 Orphanages
-Description: Custom WordPress theme for 200 Orphanages Worldwide
+Description: Custom WordPress theme for 200 Orphanages Worldwide 
 Authors: Anthony Keller, Jacob Bower, Eric Willis, Laura Anderson
 */
 
@@ -282,7 +282,7 @@ a.button-small:focus {
   border-bottom:solid 1px;
 }
 .partner-logo {
-  width: 100%;
+  width: 25%;
   height:80px;
   background-color:#999;
   line-height:80px;
@@ -290,11 +290,10 @@ a.button-small:focus {
   padding: 0;
   margin-top: 1em;
 }
-.partner-logo img {
-  max-width:100%:
-}
 .partner-description {
-  width: 100%;
+  float: left;
+  width: 75%;
+  padding-left: 2em;
 }
 .gallery-content ul {
   margin-left: -.5em;
@@ -355,11 +354,12 @@ a.button-small:focus {
 /* index and single pages */
 .alignleft {
 	float: left;
-	margin: 1em 0 0 0;
+  clear: left;
+	margin: 1em 0 0 0; 
 }
 .alignright {
 	float: right;
-	margin: 1em 0 0 0;
+	margin: 1em 0 0 0; 
 }
 .post-wrapper {
 	padding-bottom: 1em;
@@ -367,10 +367,17 @@ a.button-small:focus {
 .post-wrapper img {
 	margin: 0 auto;
 	padding: .5em 1em;
+<<<<<<< Updated upstream
 	max-width:320px;
 }
 .post-wrapper .wp-caption-text {
 	padding: 0 0 0 1em;
+=======
+}
+.post-wrapper .wp-caption-text {
+	margin: 0 auto;
+	padding: 0 0 0 1.25em;
+>>>>>>> Stashed changes
 	font-style:italic;
 	font-size: .75em;
 }
@@ -391,7 +398,8 @@ a.button-small:focus {
 }
 /* Social Share Bar */
 .ssb-share {
-margin-top: 20px;
+display: block;
+clear: both;
 }
 
 /* - - - - WIDGETS - - - - */
@@ -718,12 +726,15 @@ border-bottom: none;
   width: 75%;
   padding-left: 2em;
 }
+<<<<<<< Updated upstream
 /* - - - - Index and single - - - - */
 
 .post-wrapper img {
 	max-width:500px;
 }
 
+=======
+>>>>>>> Stashed changes
 /* - - - - FOOTER TABLET - - - - */
 footer {
 	position:relative;

@@ -16,7 +16,7 @@
                 <span class="date">Posted on <?php the_time('F jS, Y') ?></span> &bull; 
                 <span class="author"><?php _e('By');?> <?php the_author_posts_link(); ?></span>
             </p>
-        
+            <div class="clearfix"></div>
                 <?php the_content(); ?>
                        <nav class="post-nav">
                            <div class="alignleft">
