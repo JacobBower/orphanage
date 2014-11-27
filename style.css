@@ -367,17 +367,14 @@ a.button-small:focus {
 .post-wrapper img {
 	margin: 0 auto;
 	padding: .5em 1em;
-<<<<<<< Updated upstream
 	max-width:320px;
 }
 .post-wrapper .wp-caption-text {
 	padding: 0 0 0 1em;
-=======
 }
 .post-wrapper .wp-caption-text {
 	margin: 0 auto;
 	padding: 0 0 0 1.25em;
->>>>>>> Stashed changes
 	font-style:italic;
 	font-size: .75em;
 }
@@ -401,7 +398,6 @@ a.button-small:focus {
 display: block;
 clear: both;
 }
-
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: none;
@@ -726,15 +722,12 @@ border-bottom: none;
   width: 75%;
   padding-left: 2em;
 }
-<<<<<<< Updated upstream
 /* - - - - Index and single - - - - */
 
 .post-wrapper img {
 	max-width:500px;
 }
 
-=======
->>>>>>> Stashed changes
 /* - - - - FOOTER TABLET - - - - */
 footer {
 	position:relative;
