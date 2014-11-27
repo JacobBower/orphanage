@@ -363,19 +363,14 @@ a.button-small:focus {
 }
 .post-wrapper {
 	padding-bottom: 1em;
-	width:100%;
-}
-.post-wrapper p {
-	padding: 1em;
 }
 .post-wrapper img {
 	margin: 0 auto;
-	padding: .5em 2em;
+	padding: .5em 1em;
 	max-width:320px;
 }
 .post-wrapper .wp-caption-text {
-	margin: 0 auto;
-	padding: 0 0 0 3em;
+	padding: 0 0 0 1em;
 	font-style:italic;
 	font-size: .75em;
 }
@@ -398,6 +393,7 @@ a.button-small:focus {
 .ssb-share {
 margin-top: 20px;
 }
+
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: none;
