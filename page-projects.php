@@ -77,7 +77,7 @@ get_header(); ?>
        </section>
        <div class="clearfix"></div>
        
-       <section class="section-content gallery-content column-8 no-pad-left no-pad-right">
+       <?php /*?><section class="section-content gallery-content column-8 no-pad-left no-pad-right">
        <h2>Partners</h2>
        <div class="row">
                 <div class="image-row-container">
@@ -90,7 +90,7 @@ get_header(); ?>
                 </div>
             </div>
        
-       </section>
+       </section><?php */?>
        
     </div><!--GALLERY-CONTENT-->
     
