@@ -71,7 +71,7 @@ get_header(); ?>
 						<h2 class="section-headline">Recent Posts</h2>
 
 						<ul>
-							<?php $the_query = new WP_Query('showposts=2');
+							<?php $the_query = new WP_Query('showposts=3');
 							while ( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
 								<li>
 									<div class="blog-description column-12 no-pad-left">

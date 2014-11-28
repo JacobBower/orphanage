@@ -255,7 +255,7 @@ a.button-small:focus {
   background-color: #fbaa1f;
 }
 .blog-post .button-small {
-  float: left;
+  float: right;
  }
 /* - - -  PAGE CONTENT - - - - */
 .single-share li{
@@ -272,7 +272,7 @@ a.button-small:focus {
   padding-bottom: 1em;
 }
 .border-bottom {
-  border-bottom:solid 1px;
+  border-bottom: solid 1px #999;
 }
 .partner-logo {
   width: 25%;
@@ -354,6 +354,13 @@ a.button-small:focus {
 	float: right;
 	margin: 1em 0 0 0; 
 }
+.post-box {
+  padding: 1em 0;
+  border-bottom: 1px dotted #999;
+}
+.post-box .button-small {
+  margin-top: 0;
+}
 .post-wrapper {
 	padding-bottom: 1em;
 }
@@ -381,6 +388,9 @@ a.button-small:focus {
   padding-bottom: 10px;
   padding-top: 0;
   font-style:italic;
+}
+.blog .postmetadata {
+  padding-top: 10px;
 }
 .edit-post {
   float: left;
@@ -630,7 +640,7 @@ border-bottom: none;
 }
 .border-top {
   display: block;
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #999;
 }
 .blog-section {
   position: relative;

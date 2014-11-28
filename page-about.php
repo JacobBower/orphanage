@@ -13,12 +13,14 @@ get_header(); ?>
             <?php get_sidebar('secondary'); ?>
         </div>
        
-        <section class="content-section border-bottom column-8 no-pad-left no-pad-right">
+        <section class="content-section column-8 no-pad-left no-pad-right">
+            <div class="border-bottom">
                 <?php the_content(); ?>
+            </div>
         </section>
-		<section class="content-section border-bottom column-8 no-pad-left">
+		<section class="content-section column-8 no-pad-left">
       		<h3>Our Leadership</h3>
-            <div class="section-description row">
+            <div class="section-description border-bottom row">
 
                 <?php
                     $args = array(
@@ -41,18 +43,6 @@ get_header(); ?>
 
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-            	
                 	
     	</section><!--ABOUT-LEADERSHIP-->
 		
