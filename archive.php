@@ -25,10 +25,14 @@ get_header(); ?>
 			        </div>
 			    <?php endwhile; ?>
                 
-				<div class="post-nav">
-					<div class="alignright"><?php previous_posts_link( 'Next Posts &raquo;' ); ?></div>
-					<div class="alignleft"><?php next_posts_link( '&laquo; Previous Posts', '' ); ?></div>
-				</div>
+						<nav class="post-nav">
+                            <div class="alignleft">
+                            	<?php previous_post_link( '%link', '&#x276e; Previous', TRUE ); ?>
+                       		</div> 
+                       		<div class="alignright">
+                            	<?php next_post_link( '%link', 'Next &#x276f;', TRUE ); ?>
+                       		</div>
+                       </nav>
                     
 			<?php endif; ?>
 		</section>

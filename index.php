@@ -35,8 +35,8 @@ get_header(); ?>
 			    <?php endwhile; ?>
                 
 				<div class="post-nav">
-					<div class="alignright"><?php previous_posts_link( 'Next Posts &raquo;' ); ?></div>
-					<div class="alignleft"><?php next_posts_link( '&laquo; Previous Posts', '' ); ?></div>
+					<div class="alignright"><?php previous_posts_link( 'Next Posts &#x276f;' ); ?></div>
+					<div class="alignleft"><?php next_posts_link( '&#x276f; Previous Posts', '' ); ?></div>
 				</div>
                     
 			<?php endif; ?>
