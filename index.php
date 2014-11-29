@@ -12,7 +12,7 @@ get_header(); ?>
 
 	
 	<div class="content row">
-	<h1>Blog</h1>
+	<h1>Posts</h1>
 		<div class="sidebar column-4 no-pad-right">
 		    <?php get_sidebar('secondary'); ?>
 		</div>
