@@ -1,6 +1,6 @@
-/*  
+/*
 Theme Name: 200 Orphanages
-Description: Custom WordPress theme for 200 Orphanages Worldwide 
+Description: Custom WordPress theme for 200 Orphanages Worldwide
 Authors: Anthony Keller, Jacob Bower, Eric Willis, Laura Anderson
 */
 
@@ -348,11 +348,11 @@ a.button-small:focus {
 .alignleft {
 	float: left;
   clear: left;
-	margin: 1em 0 0 0; 
+	margin: 1em 0 0 0;
 }
 .alignright {
 	float: right;
-	margin: 1em 0 0 0; 
+	margin: 1em 0 0 0;
 }
 .post-box {
   padding: 1em 0;
@@ -504,7 +504,7 @@ footer {
     max-width: 60px;
     height: auto;
   }
-  
+
 }
 @media screen and (min-width: 768px) {
 
@@ -762,8 +762,8 @@ footer {
   display: block;
 }
 .footer-nav ul li a:hover {
-  text-decoration:none;
-  color:#3567b2;
+  text-decoration:underline;
+  color:#fbaa1f;
 }
 .footer-left .share-button-list {
   display: none;
