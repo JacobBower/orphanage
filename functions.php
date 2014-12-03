@@ -1,6 +1,6 @@
 <?php
 
-if ( function_exists( 'add_theme_support' ) ) { 
+if ( function_exists( 'add_theme_support' ) ) {
     // add featured image/thumbnail support
     add_theme_support('post-thumbnails');
 }
@@ -8,17 +8,17 @@ if ( function_exists( 'add_theme_support' ) ) {
 /* Register custom menus */
 function register_my_menus() {
   register_nav_menus(
-    array( 
-		  'header-menu' => __( 'Header Menu' ), 
+    array(
+		  'header-menu' => __( 'Header Menu' ),
 		  'footer-menu' => __( 'Footer Menu' )
 		  )
   );
-  
+
   add_action( 'init', 'register_my_menus' );
 
 }
 
-/* Add custom menus to Dashboard when theme is active */   
+/* Add custom menus to Dashboard when theme is active */
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
@@ -43,7 +43,7 @@ function register_my_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
-	
+
 	/* Register the secondary sidebar. */
 	register_sidebar(
 		array(
@@ -90,7 +90,7 @@ function post_type_leadership() {
 		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', ),
     );
     register_post_type( 'leadership', $postTypeArgs );
-    
+
 }
 add_action( 'init', 'post_type_leadership' );
 
@@ -103,7 +103,7 @@ function post_type_fundraising() {
 		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', ),
     );
     register_post_type( 'fundraising', $postTypeArgs );
-    
+
 }
 add_action( 'init', 'post_type_fundraising' );
 
@@ -118,7 +118,45 @@ function excerpt($limit) {
         $excerpt = implode(" ",$excerpt).'...';
       } else {
         $excerpt = implode(" ",$excerpt);
-      } 
+      }
     $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
     return $excerpt;
-    }
+}
+
+//seo title
+
+function get_title() {
+
+  global $post;
+
+  if ( is_home() || is_archive() || is_front_page() ) {
+
+    bloginfo('description'); //Grabs Tagline from wordpress profile in dashboard
+
+  }
+
+  elseif ( is_page () || is_single() ) {
+
+    the_title(); //Grab the title for the post
+
+  }
+
+  if ( $post->post_parent ) {
+
+    echo ' | ';
+    echo get_title($post->post_parent);
+
+  }
+
+  echo ' | ';
+  bloginfo('name');//Grab site title
+  echo ' | ';
+  echo 'Minnesota, United States';//State and country
+
+
+}//end title function
+
+
+//Add excerpt for pages
+
+add_post_type_support('page', 'excerpt' );
