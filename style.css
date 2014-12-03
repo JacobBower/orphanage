@@ -375,7 +375,9 @@ a.button-small:focus {
 	font-style:italic;
 	font-size: .75em;
 }
-
+.post-nav {
+	padding-top: 1em;
+}
 /* making facebook comments responsive */
 #fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
   width: 100% !important;

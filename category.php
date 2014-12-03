@@ -26,13 +26,8 @@ get_header(); ?>
 			    <?php endwhile; ?>
                 
 				<nav class="post-nav">
-                           <div class="alignleft">
-                            <?php previous_post_link( '%link', '&#x276e; Previous', TRUE ); ?>
-                       		</div> 
-                       		<div class="alignright">
-                            <?php next_post_link( '%link', 'Next &#x276f;', TRUE ); ?>
-                       		</div>
-                       </nav>
+					<?php posts_nav_link(' || ','Newer Posts','Older Posts'); ?>
+				</nav>
                     
 			<?php endif; ?>
 		</section>
