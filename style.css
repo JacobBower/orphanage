@@ -511,6 +511,14 @@ footer {
 .clearfix {
   clear: both;
 }
+
+/*Fix img hover */
+.projects .gallery-content li a:hover p, .projects .gallery-content li a:focus p{
+  background-color:#FBAA1F;
+  color:white;
+  text-decoration:underline;
+}
+
 /* Resize Logo On Small screen */
 @media screen and (min-width: 600px) {
   .header-left {
