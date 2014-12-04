@@ -85,6 +85,18 @@ function post_type_projects() {
 }
 add_action( 'init', 'post_type_projects' );
 
+function post_type_partners() {
+	// register post type
+	$postTypeArgs = array(
+		'label' => 'Partners',
+		'public' => true,
+		'rewrite' => array("slug" => "partners"),
+		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
+	);
+	register_post_type( 'partner', $postTypeArgs );
+}
+add_action( 'init', 'post_type_partners' );
+
 function post_type_leadership() {
 	// register post type
     $postTypeArgs = array(
@@ -94,22 +106,21 @@ function post_type_leadership() {
 		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', ),
     );
     register_post_type( 'leadership', $postTypeArgs );
-
 }
 add_action( 'init', 'post_type_leadership' );
 
-function post_type_fundraising() {
+function post_type_Events() {
 	// register post type
     $postTypeArgs = array(
-		'label'  => 'Fundraising',
+		'label'  => 'Events',
 		'public' => true,
-		'rewrite' => array("slug" => "fundraising"),
+		'rewrite' => array("slug" => "events"),
 		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', ),
     );
-    register_post_type( 'fundraising', $postTypeArgs );
+    register_post_type( 'event', $postTypeArgs );
 
 }
-add_action( 'init', 'post_type_fundraising' );
+add_action( 'init', 'post_type_events' );
 
 // Custom thumbnail size
 add_image_size( 'custom_size', 300, 300, array( 'center', 'center' ) );
