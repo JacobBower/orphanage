@@ -5,14 +5,11 @@ Template Name: About
 get_header(); ?>
 	
 	<div class="content">
-    
         <h1><?php the_title(); ?></h1>
         <div class="row">
-
             <div class="sidebar column-4 no-pad-right">
                 <?php get_sidebar('secondary'); ?>
             </div>
-           
             <section class="content-section column-8 no-pad-left no-pad-right">
                 <div class="border-bottom">
                     <?php the_content(); ?>
@@ -38,7 +35,6 @@ get_header(); ?>
                             <h4><?php the_title(); ?></h4>
                             <?php the_content(); ?>
                         </div>
-
                     <?php endwhile; ?>
 
                 </div>
@@ -46,27 +42,26 @@ get_header(); ?>
 
             <!-- PARTNERS -->
             <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
-               <h3 class="content-headline">Our Partners</h3>
-               <ul>
-                 <?php
-                  $args = array(
-                    'post_type' => 'partner',
-                    'posts_per_page' => -1,
-                    'orderby' => 'date',
-                    'order' => 'DESC'
-                  );
-                  $loop = new WP_Query( $args );
-                  while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                  <li>
-                    <a href="<?php the_permalink(); ?>">
-                      <?php the_post_thumbnail('custom_size'); ?>
-                      <p><?php the_title(); ?></p>
-                    </a>
-                  </li>
-                  <?php endwhile; ?>
+                <h3 class="content-headline">Our Partners</h3>
+                <ul>
+                    <?php
+                        $args = array(
+                        'post_type' => 'partner',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                        );
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                        <li>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('custom_size'); ?>
+                                <p><?php the_title(); ?></p>
+                            </a>
+                        </li>
+                    <?php endwhile; ?>
                 </ul>
             </section><!--PARTNERS-->
-        
         </div>
      </div><!-- ABOUT-CONTENT -->
 

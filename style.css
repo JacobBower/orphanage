@@ -323,11 +323,7 @@ a.button-small:focus {
   padding-bottom: 0;
 }
 .content-headline {
-  height: 3em;
   color:#434343;
-  line-height: 3em;
-  padding-left: 1em;
-  border-bottom: 1px solid #999;
 }
 /* Responsive wrapper for embeded videos */
 .video_wrapper {
