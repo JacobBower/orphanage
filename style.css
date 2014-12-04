@@ -404,6 +404,23 @@ display: block;
 clear: both;
 margin-bottom: 1em;
 }
+
+/*Content ul and li styles*/
+.post-wrapper ul{
+  list-style-type:square;
+  padding-bottom:10px;
+  padding-left:1.25em;
+}
+.post-wrapper ol {
+  list-style-type:decimal;
+  padding-bottom:10px;
+  padding-left:1.25em;
+}
+
+.post-wrapper ul li, .post-wrapper ol li {
+  padding-bottom:5px;
+  font-size:14px;
+}
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: none;
