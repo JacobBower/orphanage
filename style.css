@@ -16,7 +16,7 @@ a:link, a:visited {
   text-decoration: none;
   color:#3567b2;
 }
-a:focus, a:hover {
+a:focus, a:hover{
   color: #fbaa1f;
   text-decoration:underline;
  }
@@ -76,9 +76,9 @@ header {
   width: 100%;
   height:auto;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 4px 14px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 4px 14px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 3px 17px 0 rgba(0,0,0,0.75);
   z-index:10;
 }
 h1 {
@@ -120,9 +120,12 @@ img.logo {
   padding: 0 1em 0 0;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+
 }
 .header-right {
   float: right;
@@ -156,7 +159,7 @@ img.logo {
   color: #fbaa1f;
   display: block;
 }
-.header-nav ul li.current_page_item a{
+.header-nav ul .current_page_item a{
   color: #fbaa1f;
 }
 .responsive-menu-wrapper {
@@ -167,9 +170,11 @@ img.logo {
 .responsive-menu-img {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .menu ul li {
   font-size:2em;
@@ -243,9 +248,9 @@ a.button-small:focus {
   line-height: 40px;
   color: #FFF;
   background-color:#c5483c;
-  border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  border-radius: 10px;
   -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
@@ -462,8 +467,9 @@ footer {
 .social-mobile .social-icons li a img {
   max-width: 90%;
   height: auto;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
   -webkit-box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
   box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
@@ -486,9 +492,9 @@ footer {
   font-weight: 700;
   color:#FFF;
   font-size: 1.4em;
-  border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
   -webkit-box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
   box-shadow: 5px -5px 17px -2px rgba(0,0,0,0.75);
@@ -582,16 +588,15 @@ header {
 .share-buttons ul li{
   /*background: #FFF;*/
   padding: 0;
-  margin: 0 .4em 0 .4em;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 30px;
   color:#000;
-  -moz-border-radius: 0px 0px 10px 10px;
-  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
   -webkit-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 17px -2px rgba(0,0,0,0.75);
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
   margin: 0 .5em 0 .5em;
 }
 .share-buttons ul li a:link, .share-buttons ul li a:visited {
