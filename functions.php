@@ -18,14 +18,8 @@ function register_my_menus() {
 		  'footer-menu' => __( 'Footer Menu' )
 		  )
   );
-<<<<<<< Updated upstream
-
-  add_action( 'init', 'register_my_menus' );
-=======
-  
->>>>>>> Stashed changes
-
 }
+
 add_action( 'init', 'register_my_menus' );
 
 /* Add custom menus to Dashboard when theme is active */
