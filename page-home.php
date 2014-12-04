@@ -11,11 +11,20 @@ get_header(); ?>
 				<div class="row">
 
 					<div id="main-content-slider" class="owl-carousel owl-theme column-12 no-pad-left no-pad-right">
-						<div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/banner-1.jpg" alt="banner"></div>
-						<div class="item"><img src="<?php bloginfo('template_directory'); ?>/img/banner-2.jpg" alt="banner"></div>
+						<?php if( get_field('photo_slider')) : ?>
+							<ul>
+							<?php while( the_repeater_field('photo_slider')) : 
+								$image = get_sub_field('slider_image');
+								$slide = wp_get_attachment_image_src( $image, 'photo_slider' );
+								$alt = get_post_meta( $image, '_wp_attachment_image_alt', true);
+								?>
+								<div class="item"><img src="<?php echo $slide[0]; ?>" alt="<?php echo $alt; ?>" /></div>
+							</ul>
+							<?php endwhile; ?>
+						<?php endif; ?>
 					</div>
-
 				</div>
+
 			</section>
 			<section class="content-section-full">
 				<div class="row">
