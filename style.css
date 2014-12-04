@@ -303,13 +303,13 @@ a.button-small:focus {
 }
 /*Image Caption Boxes for Home and Projects*/
 .projects .gallery-content li a p {
-  background: #434343;
+  background: #3567b2;
   color: #FFF;
   width: 100%;
   padding: 5px 10px;
 }
 .content .current-projects p {
-  background: #434343;
+  background: #3567b2;
   color: #FFF;
   width: 100%;
   padding: 5px 10px;
@@ -324,11 +324,10 @@ a.button-small:focus {
 }
 .content-headline {
   height: 3em;
+  color:#434343;
   line-height: 3em;
-  color:#fff;
-  background-color:#434343;
   padding-left: 1em;
-  border-radius:2px;
+  border-bottom: 1px solid #999;
 }
 /* Responsive wrapper for embeded videos */
 .video_wrapper {
@@ -630,6 +629,7 @@ border-bottom: none;
 .mission-statement {
   padding-right: 1em;
   padding-bottom: 0;
+  text-align:justify;
 }
 .current-projects {
   padding-left: 1em;

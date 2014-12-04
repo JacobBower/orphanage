@@ -21,11 +21,11 @@ get_header(); ?>
 				<div class="row">
 					<div class="mission-statement column-6 no-pad-left no-pad-right">
 						<h2 class="section-headline">Mission Statement</h2>
-						<p>For me, it started in 2007 volunteering at an orphanage in Peru. The simple act of reading stories in broken Spanish... showing little girls how to cut out paper dolls for the first time. The kids moved my heart... then changed my life. After stacking blocks to build a security wall around a school yard inspired me to do something to make a child--one that I may never meet, have a safe place to call home.</p>
-						<p>Our vision became to help our partners raise funds and awareness for building projects that will better serve orphans in their care.</p>
-						<p>Our goal is to one day help more than 200 Orphanages provide safe shelter...</p>
-						<p>What's your something?</p>
-						<p>- 200 Orphanages Worldwide</p>
+						<p>For me, it started in 2007 volunteering at an orphanage in Peru. The simple act of reading stories in broken Spanish... showing little girls how to cut out paper dolls for the first time. The kids moved my heart... then changed my life. After stacking blocks to build a security wall around a school yard inspired me to do something to make a child--one that I may never meet, have a safe place to call home.<br /><br />
+						Our vision became to help our partners raise funds and awareness for building projects that will better serve orphans in their care.<br /><br />
+						Our goal is to one day help more than 200 Orphanages provide safe shelter...<br /><br />
+						What's your something?<br /><br />
+						- 200 Orphanages Worldwide</p>
 					</div>
 
 					<aside class="current-projects column-6 no-pad-left no-pad-right">
@@ -54,7 +54,6 @@ get_header(); ?>
 							<div class="section-<?php if($i == 1) { echo 'left'; } else { echo 'right'; }; ?> column-6 no-pad-left no-pad-right">
 								<?php the_post_thumbnail('custom_size'); ?>
 								<p><?php the_title(); ?></p>
-								<a href="<?php the_permalink(); ?>" class="button-small">Button</a>
 							</div>
 
 				          <?php endwhile; ?>
