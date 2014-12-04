@@ -13,7 +13,7 @@ get_header(); ?>
 					<div id="main-content-slider" class="owl-carousel owl-theme column-12 no-pad-left no-pad-right">
 						<?php if( get_field('photo_slider')) : ?>
 							<ul>
-							<?php while( the_repeater_field('photo_slider')) : 
+							<?php while( the_repeater_field('photo_slider')) :
 								$image = get_sub_field('slider_image');
 								$slide = wp_get_attachment_image_src( $image, 'photo_slider' );
 								$alt = get_post_meta( $image, '_wp_attachment_image_alt', true);
@@ -37,7 +37,7 @@ get_header(); ?>
 						- 200 Orphanages Worldwide</p>
 					</div>
 
-					<aside class="current-projects column-6 no-pad-left no-pad-right">
+					<aside class="current-projects projects column-6 no-pad-left no-pad-right">
 						<h2 class="section-headline">Current Projects</h2>
 
 
