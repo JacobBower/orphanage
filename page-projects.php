@@ -42,7 +42,6 @@ get_header(); ?>
         </ul>
 		
        </section>
-       <!--GALLERY-->
        
        <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
         <h3 class="content-headline">Past Projects</h3>
