@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Fundraising
+Template Name: Events
 */
 get_header(); ?>
 	
@@ -20,7 +20,7 @@ get_header(); ?>
             <ul>
             <?php
                 $args = array(
-                    'post_type' => 'fundraising',
+                    'post_type' => 'event',
                     'posts_per_page' => -1,
                     'orderby' => 'date',
                     'order' => 'DESC');
@@ -43,6 +43,6 @@ get_header(); ?>
         </section>
 		
         </div>
-     </div><!-- FUNDRAISING CONTENT -->
+     </div><!-- EVENTS CONTENT -->
 
 <?php get_footer(); ?>
