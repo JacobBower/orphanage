@@ -5,6 +5,11 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support('post-thumbnails');
 }
 
+add_action("wp_enqueue_scripts", function() {
+	wp_deregister_script("jquery");
+	wp_register_script("jquery", "");
+}, 100);
+
 /* Register custom menus */
 function register_my_menus() {
   register_nav_menus(
@@ -13,10 +18,15 @@ function register_my_menus() {
 		  'footer-menu' => __( 'Footer Menu' )
 		  )
   );
+<<<<<<< Updated upstream
 
   add_action( 'init', 'register_my_menus' );
+=======
+  
+>>>>>>> Stashed changes
 
 }
+add_action( 'init', 'register_my_menus' );
 
 /* Add custom menus to Dashboard when theme is active */
 if ( function_exists( 'register_nav_menus' ) ) {

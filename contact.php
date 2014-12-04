@@ -2,9 +2,9 @@
 /*
 Template Name: Contact
 */
-get_header(); ?>
-	
-	<div class="content">
+get_header(); the_post(); ?>
+    
+    <div class="content">
     
         <h1><?php the_title(); ?></h1>
        
@@ -13,7 +13,7 @@ get_header(); ?>
                 <?php the_content(); ?>
                     
             </section>
-		
+        
      </div><!-- CONTACT CONTENT -->
 
 <?php get_footer(); ?>
