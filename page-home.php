@@ -61,8 +61,10 @@ get_header(); ?>
 				          while ( $loop->have_posts() ) : $loop->the_post(); $i++; ?>
 
 							<div class="section-<?php if($i == 1) { echo 'left'; } else { echo 'right'; }; ?> column-6 no-pad-left no-pad-right">
-								<?php the_post_thumbnail('custom_size'); ?>
-								<p><?php the_title(); ?></p>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail('custom_size'); ?>
+									<p><?php the_title(); ?></p>
+								</a>
 							</div>
 
 				          <?php endwhile; ?>

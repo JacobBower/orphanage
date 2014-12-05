@@ -526,6 +526,12 @@ footer {
   color:white;
   text-decoration:underline;
 }
+.projects a:hover p, .projects a:focus p {
+  background-color:#FBAA1F;
+  color:white;
+  text-decoration:underline;
+
+}
 
 /* Resize Logo On Small screen */
 @media screen and (min-width: 600px) {
