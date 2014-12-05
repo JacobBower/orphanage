@@ -202,6 +202,7 @@ img.logo {
 }
 #main-content-slider {
   margin-top: 1em;
+  padding-bottom: 0;
 }
 #main-content-slider .item img{
   display: block;
@@ -210,11 +211,11 @@ img.logo {
 }
 .current-projects .section-left {
   width: 50%;
-  padding-right: 1em;
+  padding-right: .5em;
 }
 .current-projects .section-right {
   width: 50%;
-  padding-left: 1em;
+  padding-left: .5em;
 }
 .current-projects img {
   width: 100%;
@@ -309,6 +310,10 @@ a.button-small:focus {
 .gallery-content li img {
   width: 100%;
   padding-bottom: .5em;
+}
+.border-top {
+  border-top: 1px solid #434343;
+  padding-top: 1.5em;
 }
 /*Image Caption Boxes for Home and Projects*/
 .projects .gallery-content li a p {
@@ -688,10 +693,12 @@ border-bottom: none;
 .mission-statement {
   padding-right: 1em;
   padding-bottom: 0;
+  padding-top: 0;
   text-align:justify;
 }
 .current-projects {
   padding-left: 1em;
+  padding-top: 0;
 }
 .section-left {
   padding-right: 1em;

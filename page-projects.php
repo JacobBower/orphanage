@@ -43,7 +43,7 @@ get_header(); ?>
         </section>
        
         <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
-            <h3 class="content-headline">Past Projects</h3>
+            <h3 class="content-headline border-top">Past Projects</h3>
             <ul>
                 <?php
                     $args = array(
