@@ -101,6 +101,10 @@ p {
 .red {
   background-color:#c5483c;
 }
+blockquote {
+	font-size:.75em;
+	font-style:italic;
+}
 /* - - - - HEADER - - - - */
 .header-wrapper {
   max-width: 960px;
@@ -366,10 +370,14 @@ a.button-small:focus {
 }
 .post-wrapper img {
 	margin: 0 auto;
+	padding:1em;
 	max-width:320px;
 }
 .post-wrapper .wp-caption-text {
-  padding-top: 5px;
+  padding: 0 1em 0 2em;
+}
+.post-wrapper .wp-caption {
+	max-width: 320px;
 }
 .post-wrapper .wp-caption-text {
 	font-style:italic;
@@ -532,7 +540,13 @@ footer {
     max-width: 60px;
     height: auto;
   }
-
+  .post-wrapper .wp-caption {
+	max-width:400px;
+  }
+  .post-wrapper img {
+	max-width:400px;
+   }
+   
 }
 @media screen and (min-width: 768px) {
 
@@ -757,6 +771,9 @@ border-bottom: none;
 }
 /* - - - - Index and single - - - - */
 
+.post-wrapper .wp-caption {
+	max-width:500px;
+}
 .post-wrapper img {
 	max-width:500px;
 }
