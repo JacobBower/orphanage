@@ -197,9 +197,9 @@ img.logo {
 .content-section {
   padding: 1em 0;
 }
-.border-top {
+/*.border-top {
   display: none;
-}
+}*/
 #main-content-slider {
   margin-top: 1em;
   padding-bottom: 0;
@@ -316,6 +316,9 @@ a.button-small:focus {
   float: left;
   width: 75%;
   padding-left: 2em;
+}
+.page-template-page-projects-php .content-section {
+  padding-bottom: 0;
 }
 .gallery-content ul {
   margin-left: -1em;
@@ -585,11 +588,6 @@ footer {
     float: left;
     width: 50%;
   }
-
-
-
-
-
   .social-mobile .social-icons li a img {
     max-width: 60px;
     height: auto;
@@ -730,8 +728,8 @@ border-bottom: none;
   padding-left: 1em;
   padding-top: 0;
 }
-.past-projects {
-  padding-bottom: 2em;
+.page-template-page-projects-php .past-projects {
+  padding-bottom: 1em;
 }
 .section-left {
   padding-right: 1em;
