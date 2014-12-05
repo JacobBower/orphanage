@@ -130,7 +130,6 @@ img.logo {
   -ms-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
-
 }
 .header-right {
   float: right;
@@ -434,6 +433,9 @@ margin-bottom: 1em;
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: none;
+}
+.widget widget_search {
+	padding-top:10px;
 }
 /* - - - - FOOTER - - - - */
 footer {
