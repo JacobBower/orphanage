@@ -14,10 +14,10 @@ get_header(); ?>
         </div>
        
         <section class="content-section column-8 no-pad-left no-pad-right">
-
             <?php the_content(); ?>
 
-            <ul>
+            <!-- <ul> -->
+            <div class="section-description">
             <?php
                 $args = array(
                     'post_type' => 'event',
@@ -26,20 +26,23 @@ get_header(); ?>
                     'order' => 'DESC');
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                    <li class="row">
+                    <!-- <li class="row"> -->
+                    <div class="event-wrap no-pad-left no-pad-right">
                         <a href="<?php the_permalink(); ?>">
-                            <div class="image-wrapper column-4 no-pad-left">
+                            <div class="image-wrapper column-4 no-pad-left no-pad-right">
                                 <?php the_post_thumbnail('custom_size'); ?>
                             </div>
                         </a>
-                        <div class="column-8 no-pad-right">
+                        <div class="page-post-description column-8 no-pad-left no-pad-right">
                             <?php the_title(); ?>
                             <p><?php echo excerpt(35); ?></p>
                             <a href="<?php the_permalink(); ?>" class="button-small">More</a>
                         </div>
-                    </li>
+                    </div>
+                    <!-- </li> -->
                 <?php endwhile; ?>
-            </ul>    
+            </div>
+            <!-- </ul> -->    
         </section>
 		
         </div>

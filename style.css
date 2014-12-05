@@ -288,10 +288,12 @@ a.button-small:focus {
   padding-bottom: 1em;
   padding-top: 0;
 }
-.leader-wrap {
+.leader-wrap,
+.event-wrap {
   padding: 0;
 }
-.leader-wrap img {
+.leader-wrap img,
+.event-wrap img {
   width: 100%;
 }
 .leader-wrap .page-post-description p {
@@ -318,6 +320,12 @@ a.button-small:focus {
   padding-left: 2em;
 }
 .page-template-page-projects-php .content-section {
+  padding-bottom: 0;
+}
+.page-template-page-events-php .content-section {
+  padding-bottom: 0;
+}
+.page-template-page-events-php .image-wrapper {
   padding-bottom: 0;
 }
 .gallery-content ul {
@@ -588,6 +596,19 @@ footer {
     float: left;
     width: 50%;
   }
+  .event-wrap .image-wrapper {
+    width: 50%;
+    clear: left;
+    padding-right: 2em;
+    float: left;
+  }
+  .event-wrap .page-post-description {
+    width: 50%;
+    float: left;
+  }
+  .page-template-page-events-php .image-wrapper {
+    padding-bottom: 1em;
+  }
   .social-mobile .social-icons li a img {
     max-width: 60px;
     height: auto;
@@ -723,6 +744,7 @@ border-bottom: none;
 }
 .page-template-page-events-php .content-section {
   padding-top: 0;
+  padding-bottom: 1em;
 }
 .current-projects {
   padding-left: 1em;
@@ -780,6 +802,12 @@ border-bottom: none;
 .gallery-content li {
   width: 33.333333%;
 }
+.event-wrap .image-wrapper {
+    width: 41.66667%;
+  }
+  .event-wrap .page-post-description {
+    width: 58.33333%;
+  }
 /* - - - - WIDGETS - - - - */
 .sidebar {
   display: block;
