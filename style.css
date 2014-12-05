@@ -299,6 +299,9 @@ a.button-small:focus {
 .leader-wrap .page-post-description p {
   padding-bottom: 0;
 }
+.event-wrap .page-post-description {
+  padding-top: 0;
+}
 .content-section.leadership {
   padding-bottom: 0;
 }
