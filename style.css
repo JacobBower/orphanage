@@ -317,7 +317,7 @@ a.button-small:focus {
   width: 100%;
   padding: 5px 10px;
 }
-.content .current-projects p {
+.content .current-projects p, .leadership ul li p {
   background: #3567b2;
   color: #FFF;
   width: 100%;
@@ -530,7 +530,17 @@ footer {
   background-color:#FBAA1F;
   color:white;
   text-decoration:underline;
+}
 
+.leadership ul li a:hover p, .leadership ul li:focus p{
+  text-decoration:underline;
+  color:#FBAA1F;
+}
+.leadership ul li a:hover p, .leadership ul li a:focus p{
+  background-color:#FBAA1F;
+  color:white;
+  text-decoration:underline;
+  
 }
 
 /* Resize Logo On Small screen */
@@ -552,7 +562,7 @@ footer {
   .post-wrapper img {
 	max-width:400px;
    }
-   
+
 }
 @media screen and (min-width: 768px) {
 

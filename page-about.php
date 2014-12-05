@@ -43,7 +43,7 @@ get_header(); ?>
         	</section><!--ABOUT-LEADERSHIP-->
 
             <!-- PARTNERS -->
-            <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
+            <section class="content-section leadership gallery-content column-8 no-pad-left no-pad-right">
                 <h3 class="content-headline">Our Partners</h3>
                 <ul>
                     <?php
