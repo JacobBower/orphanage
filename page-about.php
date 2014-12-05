@@ -1,11 +1,11 @@
-<?php 
+<?php
 /*
 Template Name: About
 */
 get_header(); ?>
-	
+
 	<div class="content">
-        <h1><?php the_title(); ?></h1>
+        <h1><?php the_title(); the_post(); ?></h1>
         <div class="row">
             <div class="sidebar column-4 no-pad-right">
                 <?php get_sidebar('secondary'); ?>
