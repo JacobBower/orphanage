@@ -700,6 +700,9 @@ border-bottom: none;
   padding-left: 1em;
   padding-top: 0;
 }
+.past-projects {
+  padding-bottom: 2em;
+}
 .section-left {
   padding-right: 1em;
 }
@@ -715,9 +718,6 @@ border-bottom: none;
 }
 .blog-section h2 {
   margin-bottom: 5px;
-}
-.blog-section ul {
-  padding-top: 1em;
 }
 .blog-section ul li {
   padding-bottom: 1em;

@@ -42,7 +42,7 @@ get_header(); ?>
             </ul>
         </section>
        
-        <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
+        <section class="content-section gallery-content past-projects column-8 no-pad-left no-pad-right">
             <h3 class="content-headline border-top">Past Projects</h3>
             <ul>
                 <?php
