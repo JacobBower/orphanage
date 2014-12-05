@@ -284,6 +284,25 @@ a.button-small:focus {
 .border-bottom {
   border-bottom: solid 1px #999;
 }
+.mission-statement {
+  padding-bottom: 1em;
+  padding-top: 0;
+}
+.leader-wrap {
+  padding: 0;
+}
+.leader-wrap img {
+  width: 100%;
+}
+.leader-wrap .page-post-description p {
+  padding-bottom: 0;
+}
+.content-section.leadership {
+  padding-bottom: 0;
+}
+.section-description {
+  padding-bottom: 1em;
+}
 .partner-logo {
   width: 25%;
   height:80px;
@@ -299,17 +318,16 @@ a.button-small:focus {
   padding-left: 2em;
 }
 .gallery-content ul {
-  margin-left: -.5em;
-  margin-right: -.5em;
+  margin-left: -1em;
+  margin-right: -1em;
 }
 .gallery-content li {
   width: 50%;
   float: left;
-  padding: 1em .5em 0 .5em;
+  padding: 1em;
 }
 .gallery-content li img {
   width: 100%;
-  padding-bottom: .5em;
 }
 .border-top {
   border-top: 1px solid #434343;
@@ -327,7 +345,6 @@ a.button-small:focus {
   color: #FFF;
   width: 100%;
   padding: 5px 10px;
-  margin-bottom:10px;
 }
 .projects .gallery-content li a p:hover,
 .projects .gallery-content li a p:focus {
@@ -539,7 +556,6 @@ footer {
   color:white;
   text-decoration:underline;
 }
-
 .leadership ul li a:hover p, .leadership ul li:focus p{
   text-decoration:underline;
   color:#FBAA1F;
@@ -560,6 +576,20 @@ footer {
     max-width: 250px;
     height: auto;
   }
+  .leader-wrap .image-wrapper {
+    width: 50%;
+    padding-right: 2em;
+    float: left;
+  }
+  .leader-wrap .page-post-description {
+    float: left;
+    width: 50%;
+  }
+
+
+
+
+
   .social-mobile .social-icons li a img {
     max-width: 60px;
     height: auto;
@@ -684,17 +714,17 @@ border-bottom: none;
 .content-section {
   padding: 1em 1em 1em 0;
 }
+.content-section.leadership {
+  padding-bottom: 1em;
+}
 .content-section-full {
   padding: 1em 0;
 }
 .content {
 	  padding-top:102px;
 }
-.mission-statement {
-  padding-right: 1em;
-  padding-bottom: 0;
+.page-template-page-events-php .content-section {
   padding-top: 0;
-  text-align:justify;
 }
 .current-projects {
   padding-left: 1em;

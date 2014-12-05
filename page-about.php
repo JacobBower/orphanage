@@ -11,7 +11,7 @@ get_header(); ?>
                 <?php get_sidebar('secondary'); ?>
             </div>
             <section class="content-section column-8 no-pad-left no-pad-right">
-                <div class="border-bottom">
+                <div class="border-bottom mission-statement">
                     <?php the_content(); ?>
                 </div>
             </section>
@@ -27,18 +27,17 @@ get_header(); ?>
                             'order' => 'ASC'
                         );
                         $loop = new WP_Query( $args );
-                        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-												<div class="leader-wrap column-12">
-	                        <div class="image-wrapper column-4 no-pad-left">
+                    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+						<div class="leader-wrap no-pad-left no-pad-right column-12">
+	                        <div class="image-wrapper column-4 no-pad-left no-pad-right">
 	                            <?php the_post_thumbnail('custom_size'); ?>
 	                        </div>
-	                        <div class="page-post-description column-8 no-pad-right">
+	                        <div class="page-post-description column-8 no-pad-left no-pad-right">
 	                            <h4><?php the_title(); ?></h4>
 	                            <?php the_content(); ?>
 	                        </div>
-												</div>
+						</div>
                     <?php endwhile; ?>
-
                 </div>
         	</section><!--ABOUT-LEADERSHIP-->
 
