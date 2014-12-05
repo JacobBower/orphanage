@@ -28,13 +28,15 @@ get_header(); ?>
                         );
                         $loop = new WP_Query( $args );
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                        <div class="image-wrapper column-4 no-pad-left">
-                            <?php the_post_thumbnail('custom_size'); ?>
-                        </div>
-                        <div class="page-post-description column-8 no-pad-right">
-                            <h4><?php the_title(); ?></h4>
-                            <?php the_content(); ?>
-                        </div>
+												<div class="leader-wrap column-12">
+	                        <div class="image-wrapper column-4 no-pad-left">
+	                            <?php the_post_thumbnail('custom_size'); ?>
+	                        </div>
+	                        <div class="page-post-description column-8 no-pad-right">
+	                            <h4><?php the_title(); ?></h4>
+	                            <?php the_content(); ?>
+	                        </div>
+												</div>
                     <?php endwhile; ?>
 
                 </div>
