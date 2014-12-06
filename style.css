@@ -335,13 +335,13 @@ a.button-small:focus {
   padding-bottom: 0;
 }
 .gallery-content ul {
-  margin-left: -1em;
-  margin-right: -1em;
+  margin-left: -.5em;
+  margin-right: -.5em;
 }
 .gallery-content li {
   width: 50%;
   float: left;
-  padding: 1em;
+  padding: 1em .5em;
 }
 .gallery-content li img {
   width: 100%;

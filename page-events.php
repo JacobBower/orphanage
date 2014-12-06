@@ -35,7 +35,7 @@ get_header(); ?>
                         </a>
                         <div class="page-post-description column-8 no-pad-left no-pad-right">
                             <?php the_title(); ?>
-                            <p><?php echo excerpt(35); ?></p>
+                            <p><?php echo excerpt(25); ?></p>
                             <a href="<?php the_permalink(); ?>" class="button-small">More</a>
                         </div>
                     </div>
