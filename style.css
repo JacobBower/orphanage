@@ -105,6 +105,7 @@ blockquote {
 	font-size:.85em;
 	font-style:italic;
 	color:#939393;
+	padding: 0 1em;
 }
 /* - - - - HEADER - - - - */
 .header-wrapper {
