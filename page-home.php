@@ -71,7 +71,7 @@ get_header(); ?>
 		</div><!--row-->
 	</section>
 
-	<section class="content-section-full border-top">
+	<section class="content-section-full blog-post-section border-top">
 		<div class="row">
 			<div class="blog-section column-8 no-pad-left">
 				<h3 class="content-headline">Recent Posts</h2>

@@ -202,12 +202,15 @@ img.logo {
 }*/
 #main-content-slider {
   margin-top: 1em;
-  padding-bottom: 0;
+  padding-bottom: .5em;
 }
 #main-content-slider .item img{
   display: block;
   width: 100%;
   height: auto;
+}
+.current-projects {
+  padding-bottom: 0;
 }
 .current-projects .section-left {
   width: 50%;
@@ -221,6 +224,9 @@ img.logo {
   width: 100%;
   height: auto;
   margin: 5px 0 0 0;
+}
+.blog-post-section {
+  display: none;
 }
 /* Small and Large Button Styles */
 a.button-small {
@@ -285,7 +291,7 @@ a.button-small:focus {
   border-bottom: solid 1px #999;
 }
 .mission-statement {
-  padding-bottom: 1em;
+  padding-bottom: 0;
   padding-top: 0;
 }
 .leader-wrap,
@@ -745,6 +751,12 @@ border-bottom: none;
 .page-template-page-events-php .content-section {
   padding-top: 0;
   padding-bottom: 1em;
+}
+.mission-statement {
+  padding-right: 1em;
+}
+#main-content-slider {
+  padding-bottom: 0;
 }
 .current-projects {
   padding-left: 1em;
