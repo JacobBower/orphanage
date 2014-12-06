@@ -776,6 +776,9 @@ border-bottom: none;
   display: block;
   border-top: 1px solid #999;
 }
+.blog .content-section {
+  padding-bottom: 2em;
+}
 .blog-section {
   position: relative;
 }
