@@ -351,6 +351,10 @@ a.button-small:focus {
   border-top: 1px solid #434343;
   padding-top: 1.5em;
 }
+.post-wrapper #gallery-1 img {
+	border: none;
+}
+
 /*Image Caption Boxes for Home and Projects*/
 .projects .gallery-content li a p {
   background: #3567b2;
@@ -932,6 +936,18 @@ footer {
 }
 }
 
-@media screen and (min-width: 1056px) {
+@media screen and (min-width: 1056px) { 
+}
 
+@media screen and (max-width: 550px) {
+.post-wrapper #gallery-1 .gallery-item {
+	width: 50%;
+}
+}
+
+@media screen and (max-width: 390px) {
+.post-wrapper #gallery-1 .gallery-item {
+	width: 100%;
+	text-align: justify;
+}
 }
