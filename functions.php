@@ -68,7 +68,7 @@ function post_type_projects() {
 		'label'  => 'Projects',
 		'public' => true,
 		'rewrite' => array("slug" => "projects"),
-		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
+		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes','excerpt' ),
     );
     register_post_type( 'project', $postTypeArgs );
     // Register taxonomy
@@ -115,7 +115,7 @@ function post_type_Events() {
 		'label'  => 'Events',
 		'public' => true,
 		'rewrite' => array("slug" => "events"),
-		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', ),
+		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', 'excerpt' ),
     );
     register_post_type( 'event', $postTypeArgs );
 
