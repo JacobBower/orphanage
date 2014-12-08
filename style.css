@@ -412,7 +412,7 @@ a.button-small:focus {
 .post-wrapper {
 	padding-bottom: 1em;
 }
-.post-wrapper img {
+.post-wrapper .attachment-post-thumbnail {
 	margin: 0 auto;
 	max-width:320px;
 }
