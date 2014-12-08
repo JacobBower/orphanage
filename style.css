@@ -414,7 +414,6 @@ a.button-small:focus {
 }
 .post-wrapper img {
 	margin: 0 auto;
-	padding:1em;
 	max-width:320px;
 }
 .post-wrapper .wp-caption-text {
