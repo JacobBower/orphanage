@@ -601,7 +601,7 @@ footer {
   border-radius:10px;
   color:white;
   font-size:1.25em;
-  padding:20px;
+  padding:20px 40px;
 }
 .banner-caption.top-left {
   left: 1em;
@@ -971,22 +971,23 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-.post-wrapper #gallery-1 .gallery-item {
-	width: 50%;
-}
+  .post-wrapper #gallery-1 .gallery-item {
+  	width: 50%;
+  }
 
-/*Mobile banner caption styles*/
-.banner-caption{
-  width:75%;
-}
-.banner-caption p{
-  font-size:1em;
-}
+  /*Mobile banner caption styles*/
+  .banner-caption{
+    width: auto;
+    padding: 5px 20px;
+    font-size: .75em;
+    text-align: center;
+  }
+
 }
 
 @media screen and (max-width: 390px) {
-.post-wrapper #gallery-1 .gallery-item {
-	width: 100%;
-	text-align: justify;
-}
+  .post-wrapper #gallery-1 .gallery-item {
+  	width: 100%;
+  	text-align: justify;
+  }
 }
