@@ -596,17 +596,16 @@ footer {
   position:absolute;
   bottom:10px;
   left:0;
-  width:55%;
+  width:auto;
   height:auto;
   background-color:black;
   opacity:0.6;
   border-radius:10px;
-}
-.banner-caption p{
   color:white;
   font-size:1.25em;
   padding:10px;
 }
+
 /* Resize Logo On Small screen */
 @media screen and (min-width: 600px) {
   .header-left {

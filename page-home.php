@@ -15,11 +15,15 @@ get_header(); the_post(); ?>
 					<ul>
 					<?php while( the_repeater_field('photo_slider')) :
 						$image = get_sub_field('slider_image');
-						$slide = wp_get_attachment_image_src( $image, 'photo_slider' );
+						$caption = get_sub_field('slider_caption');
+						$align = get_sub_field('caption_align');
+						$slide = wp_get_attachment_image_src( $image, $caption, 'photo_slider' );
 						$alt = get_post_meta( $image, '_wp_attachment_image_alt', true);
 						?>
-						<div class="item"><img src="<?php echo $slide[0]; ?>" alt="<?php echo $alt; ?>" />
-							<div class="banner-caption"><p>This is a very long caption because I need to see what happens</p>
+
+						<div class="item">
+							<img src="<?php echo $slide[0]; ?>" alt="<?php echo $alt; ?>" />
+							<h3 class="banner-caption"><?php echo $caption; ?></h3>
 						</div>
 					</ul>
 					<?php endwhile; ?>
