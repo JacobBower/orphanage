@@ -23,7 +23,7 @@ get_header(); the_post(); ?>
 
 						<div class="item">
 							<img src="<?php echo $slide[0]; ?>" alt="<?php echo $alt; ?>" />
-							<h3 class="banner-caption"><?php echo $caption; ?></h3>
+							<h3 class="banner-caption <?php if( $align == "top left" ) { echo 'top-left'; } elseif( $align == "top right" ) { echo 'top-right'; } elseif( $align == "bottom left" ) { echo 'bottom-left'; } else { echo 'bottom-right'; }; ?>"><?php echo $caption; ?></h3>
 						</div>
 					</ul>
 					<?php endwhile; ?>
