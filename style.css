@@ -396,11 +396,11 @@ a.button-small:focus {
 .alignleft {
 	float: left;
   clear: left;
-	margin: 1em 0 0 0;
+	margin: 1em 1em 1em 0;
 }
 .alignright {
 	float: right;
-	margin: 1em 0 0 0;
+	margin: 1em 0 1em 1em;
 }
 .post-box {
   padding: 1em 0;
@@ -586,8 +586,10 @@ footer {
   background-color:#FBAA1F;
   color:white;
   text-decoration:underline;
-  
+
 }
+
+/*Fix Align Left & Right*/
 
 /* Resize Logo On Small screen */
 @media screen and (min-width: 600px) {
@@ -936,7 +938,7 @@ footer {
 }
 }
 
-@media screen and (min-width: 1056px) { 
+@media screen and (min-width: 1056px) {
 }
 
 @media screen and (max-width: 550px) {
