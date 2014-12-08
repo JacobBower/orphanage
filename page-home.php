@@ -18,7 +18,9 @@ get_header(); the_post(); ?>
 						$slide = wp_get_attachment_image_src( $image, 'photo_slider' );
 						$alt = get_post_meta( $image, '_wp_attachment_image_alt', true);
 						?>
-						<div class="item"><img src="<?php echo $slide[0]; ?>" alt="<?php echo $alt; ?>" /></div>
+						<div class="item"><img src="<?php echo $slide[0]; ?>" alt="<?php echo $alt; ?>" />
+							<div class="banner-caption"><p>This is a very long caption because I need to see what happens</p>
+						</div>
 					</ul>
 					<?php endwhile; ?>
 				<?php endif; ?>
