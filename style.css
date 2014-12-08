@@ -241,6 +241,7 @@ img.logo {
   color:white;
   font-size: .75em;
   padding: 5px 20px;
+  line-height: 1.4;
 }
 .banner-caption.top-left {
   left: 1em;
