@@ -594,8 +594,8 @@ footer {
 }
 .banner-caption {
   position:absolute;
-  bottom:10px;
-  left:0;
+  bottom:20px;
+  left:20px;
   width:auto;
   height:auto;
   background-color:black;
@@ -603,7 +603,7 @@ footer {
   border-radius:10px;
   color:white;
   font-size:1.25em;
-  padding:10px;
+  padding:20px;
 }
 
 /* Resize Logo On Small screen */
