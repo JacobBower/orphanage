@@ -6,19 +6,8 @@
 		<title><?php get_title(); ?></title>
 		<!-- Description -->
 		<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
-		
 		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
-
 		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.2.1.1.js"></script>
-		<script type="text/javascript" charset="utf-8">
-		$(window).load(function() { // enable function upon window load
-
-			$(".responsive-menu").click(function() { // when toggle is clicked...
-				$("nav").slideToggle(400); // ... open or close the navigation
-			});
-
-		});
-		</script>
 		<?php $host = $_SERVER['SERVER_NAME']; if ($host == 'localhost') : ?>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 		<?php else: ?>

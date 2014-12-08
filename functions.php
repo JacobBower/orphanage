@@ -5,11 +5,6 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support('post-thumbnails');
 }
 
-add_action("wp_enqueue_scripts", function() {
-	wp_deregister_script("jquery");
-	wp_register_script("jquery", "");
-}, 100);
-
 /* Register custom menus */
 function register_my_menus() {
   register_nav_menus(
@@ -61,6 +56,7 @@ function register_my_sidebars() {
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
+
 // Custom Post Types
 function post_type_projects() {
 	// register post type

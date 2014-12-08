@@ -54,8 +54,9 @@ get_header(); ?>
                         );
                         $loop = new WP_Query( $args );
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                        <?php $url = get_field('partner_url'); ?>
                         <li>
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="<?php the_field('partner_url'); ?>" target="_blank">
                                 <?php the_post_thumbnail('custom_size'); ?>
                                 <p><?php the_title(); ?></p>
                             </a>
