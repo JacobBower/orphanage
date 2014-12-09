@@ -499,14 +499,14 @@ a.button-small:focus {
 .ssb-share {
 display: block;
 clear: both;
-margin-bottom: 1em;
+margin: .5em 0;
 }
 /* ============= WIDGETS ============= */
 .sidebar {
   display: none;
 }
 .searchform {
-	padding-top:10px;
+	padding:.5em 0;
 }
 /* ============= FOOTER ============= */
 footer {
