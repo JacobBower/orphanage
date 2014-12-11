@@ -27,7 +27,7 @@
 		ga('create', 'UA-1530997-15', 'auto');
 		ga('send', 'pageview');
 		</script>
-		
+
 	</head>
 		<body <?php body_class(); ?>>
 
@@ -45,9 +45,9 @@
 
 						<div class="share-buttons column-12">
 							<ul class="share-button-list">
-								<li class="column-3 yellow"><a href="#" >Act</a></li>
-								<li class="column-3 blue"><a href="#" >Share</a></li>
-								<li class="column-3 red"><a href="#" >Give</a></li>
+								<li class="column-3 yellow"><a href="http://www.volunteermatch.org/search/org275185.jsp" target="_blank">Act</a></li>
+								<li class="column-3 blue"><a href="https://www.facebook.com/200Orphans" target="_blank">Share</a></li>
+								<li class="column-3 red"><a href="https://secure.etransfer.com/ecomm/donation/donation1.cfm?d2org=200Orphanages&d2tool=donate" target="_blank">Give</a></li>
 							</ul>
 						</div>
 						<div class="header-nav-wrapper">
