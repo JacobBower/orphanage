@@ -12,7 +12,6 @@ get_header(); the_post(); ?>
 
 			<div id="main-content-slider" class="owl-carousel owl-theme column-12 no-pad-left no-pad-right">
 				<?php if( get_field('photo_slider')) : ?>
-					<ul>
 					<?php while( the_repeater_field('photo_slider')) :
 						$image = get_sub_field('slider_image');
 						$caption = get_sub_field('slider_caption');
@@ -20,13 +19,14 @@ get_header(); the_post(); ?>
 						$slide = wp_get_attachment_image_src( $image, $caption, 'photo_slider' );
 						$alt = get_post_meta( $image, '_wp_attachment_image_alt', true);
 						?>
-
-						<div class="item">
+						<ul>
+						<li class="item">
 							<img src="<?php echo $slide[0]; ?>" alt="<?php echo $alt; ?>" />
 							<h3 class="banner-caption <?php if( $align == "top left" ) { echo 'top-left'; } elseif( $align == "top right" ) { echo 'top-right'; } elseif( $align == "bottom left" ) { echo 'bottom-left'; } else { echo 'bottom-right'; }; ?>"><?php echo $caption; ?></h3>
-						</div>
-					</ul>
-					<?php endwhile; ?>
+						</li>
+						</ul>
+						<?php endwhile; ?>
+
 				<?php endif; ?>
 			</div>
 		</div>
@@ -35,12 +35,12 @@ get_header(); the_post(); ?>
 	<section class="content-section-full">
 		<div class="row">
 			<div class="mission-statement column-6 no-pad-left no-pad-right">
-				<h3 class="content-headline"><?php the_title(); ?></h2>
+				<h3 class="content-headline"><?php the_title(); ?></h3>
 				<?php the_content(); ?>
 			</div>
 
 			<aside class="current-projects projects column-6 no-pad-left no-pad-right">
-				<h3 class="content-headline">Current Projects</h2>
+				<h3 class="content-headline">Current Projects</h3>
 				<?php
 		          	$args = array(
 			            'post_type' => 'project',
@@ -76,9 +76,8 @@ get_header(); the_post(); ?>
 	<section class="content-section-full blog-post-section border-top">
 		<div class="row">
 			<div class="blog-section column-8 no-pad-left">
-				<h3 class="content-headline">Recent Posts</h2>
+				<h3 class="content-headline">Recent Posts</h3>
 
-				<ul>
 					<?php $the_query = new WP_Query('showposts=3');
 					while ( $the_query -> have_posts() ) : $the_query -> the_post(); ?>
 						<div class="blog-description column-12 no-pad-left">
@@ -87,7 +86,6 @@ get_header(); the_post(); ?>
 							<a href="<?php the_permalink() ?>" class="button-small">More</a>
 						</div>
 					<?php endwhile; ?>
-				</ul>
 
 				<div class="clearfix"></div>
 
