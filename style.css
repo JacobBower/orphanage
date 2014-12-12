@@ -445,13 +445,8 @@ a.button-small:focus {
 	margin: 0 auto;
 	max-width:320px;
 }
-.post-wrapper .wp-caption-text {
-  padding: 0 1em 0 2em;
-}
-.post-wrapper .wp-caption {
-	max-width: 320px;
-}
-.post-wrapper .wp-caption-text {
+.wp-caption-text {
+  padding: .5em 1em 0 0;
 	font-style:italic;
 	font-size: .75em;
 }
