@@ -373,11 +373,12 @@ a.button-small:focus {
   width: 50%;
   float: left;
   padding: 1em .5em;
-  min-height:370px;
-
 }
 .gallery-content li img {
   width: 100%;
+}
+.leadership li{
+  min-height:325px;
 }
 .border-top {
   border-top: 1px solid #434343;
@@ -856,7 +857,10 @@ footer {
   }
   .gallery-content li {
     width: 33.333333%;
-    min-height:320px;
+  }
+  .leadership li{
+        min-height:320px;
+
   }
   .social-mobile {
     display: none;
