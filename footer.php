@@ -13,9 +13,9 @@
 	<div class="footer-wrapper row">
 		<div class="social-mobile">
 			<ul class="share-button-list row">
-				<li class="button-footer column-4"><a href="#" class="yellow">Act</a></li>
-				<li class="button-footer column-4"><a href="#" class="blue">Share</a></li>
-				<li class="button-footer column-4"><a href="#" class="red">Give</a></li>
+				<li class="button-footer column-4"><a href="http://www.volunteermatch.org/search/org275185.jsp" target="_blank" class="yellow">Act</a></li>
+				<li class="button-footer column-4"><a href="https://www.facebook.com/200Orphans" target="_blank" class="blue">Share</a></li>
+				<li class="button-footer column-4"><a href="https://secure.etransfer.com/ecomm/donation/donation1.cfm?d2org=200Orphanages&amp;d2tool=donate" target="_blank" class="red">Give</a></li>
 			</ul>
 		</div>
 		<div class="footer-left column-4 no-pad-left no-pad-right">

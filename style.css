@@ -867,10 +867,7 @@ footer {
   .sidebar h3 {
   	height:3em;
   	line-height:3em;
-  	color: #fff;
-  	background-color:#434343;
-  	padding-left: 1em;
-    border-radius:2px;
+    border-bottom:1px solid black;
   }
   .sidebar h3:first-child {
   	margin-top: 0;
