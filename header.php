@@ -7,6 +7,8 @@
 		<!-- Description -->
 		<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
 		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.2.1.1.js"></script>
 		<?php $host = $_SERVER['SERVER_NAME']; if ($host == 'localhost') : ?>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
