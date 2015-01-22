@@ -1,18 +1,18 @@
-<?php 
+<?php
 /*
 Template Name: Projects
 */
-get_header(); ?>
-	
+get_header(); the_post();?>
+
 	<div class="content projects row">
-    
         <h1><?php the_title(); ?></h1>
-       
         <div class="sidebar column-4 no-pad-right">
             <?php get_sidebar('secondary'); ?>
         </div>
-       
+
         <section class="content-section gallery-content column-8 no-pad-left no-pad-right">
+					<?php the_content(); ?>
+
             <h3 class="content-headline">Current Projects</h3>
             <ul>
                 <?php
@@ -41,9 +41,9 @@ get_header(); ?>
                 <?php endwhile; ?>
             </ul>
         </section>
-       
+
         <section class="content-section gallery-content past-projects column-8 no-pad-left no-pad-right">
-            <h3 class="content-headline border-top">Past Projects</h3>
+            <h3 class="content-headline border-top">Completed Projects</h3>
             <ul>
                 <?php
                     $args = array(
@@ -70,10 +70,10 @@ get_header(); ?>
                     </li>
                 <?php endwhile; ?>
             </ul>
-               			
+
        </section>
        <div class="clearfix"></div>
-       
+
     </div><!--GALLERY-CONTENT-->
-    
+
 <?php get_footer(); ?>

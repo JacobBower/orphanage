@@ -105,16 +105,26 @@ function post_type_leadership() {
 }
 add_action( 'init', 'post_type_leadership' );
 
-function post_type_Events() {
-	// register post type
-    $postTypeArgs = array(
-		'label'  => 'Events',
-		'public' => true,
-		'rewrite' => array("slug" => "events"),
-		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes', 'excerpt' ),
-    );
-    register_post_type( 'event', $postTypeArgs );
-
+function post_type_events() {
+  // register post type
+  $postTypeArgs = array(
+    'label'  => 'Events',
+    'public' => true,
+    'rewrite' => array("slug" => "events"),
+    'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes','excerpt' ),
+  );
+  register_post_type( 'events', $postTypeArgs );
+  // Register taxonomy
+  $taxArgs = array(
+    'label'                         => 'Categories',
+    'public'                        => true,
+    'hierarchical'                  => true,
+    'show_ui'                       => true,
+    'show_in_nav_menus'             => true,
+    'args'                          => array( 'orderby' => 'term_order' ),
+    'query_var'                     => true
+  );
+  register_taxonomy( 'events_categories', 'events', $taxArgs );
 }
 add_action( 'init', 'post_type_events' );
 
